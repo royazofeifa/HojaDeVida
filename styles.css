@@ -127,6 +127,29 @@ ul li:hover {
     font-size: 14px;
 }
 
+/* Tabla de historial académico */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #008080;
+}
+
+table th {
+    background-color: rgba(0, 128, 128, 0.1);
+    color: #00A6A6;
+    font-weight: 600;
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 /* Footer */
 footer {
     text-align: center;
