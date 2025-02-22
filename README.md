@@ -1,2 +1,0 @@
-# HojaDeVida
-Curriculum
