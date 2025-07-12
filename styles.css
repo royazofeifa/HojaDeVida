@@ -793,3 +793,10 @@ html {
     box-sizing: border-box;
   }
 }
+section.reveal + section.reveal {
+  margin-top: 2rem;
+}
+
+section.reveal .job:last-child {
+  margin-bottom: 2rem;
+}
