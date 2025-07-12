@@ -781,4 +781,15 @@ html {
   z-index: 2;
   background: transparent;
 }
-💡 Bonus: Para evitar que los botones se v
+@media screen and (max-width: 700px) {
+  section.reveal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section.reveal .job {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
