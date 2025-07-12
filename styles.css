@@ -398,7 +398,7 @@ p {
   padding: 1.2rem 1.5rem;
   border-radius: 12px;
   /* Ajuste clave: Aumentar el margen inferior para separar los divs */
-  margin-bottom: 2.5rem; /* Aumentado de 1.5rem para mayor separación */
+  margin-bottom: 4rem; /* Aumentado de 1.5rem para mayor separación */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, background-color 0.3s ease;
   will-change: transform;
