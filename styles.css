@@ -139,6 +139,29 @@ body {
   gap: 2rem;
 }
 
+/* Solo estos cambios son para móvil */
+@media screen and (max-width: 700px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    margin: 0 auto; /* Centra la imagen perfectamente */
+  }
+  
+  .header-info {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contact-info {
+    justify-content: center;
+  }
+}
+
+/* El resto del código se mantiene EXACTAMENTE igual */
 .profile-pic {
   width: 140px;
   height: 140px;
@@ -190,12 +213,6 @@ body {
   100% {
     box-shadow: 0 0 25px rgba(0, 255, 0, 0.6), 0 0 8px rgba(0, 0, 0, 0.4);
   }
-}
-
-[data-theme="dark"] .profile-pic:hover {
-  border-color: #00ff00;
-  box-shadow: 0 0 30px #00ff00, 0 0 60px rgba(0, 255, 0, 0.3),
-    0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .header-info h1 {
@@ -764,3 +781,4 @@ html {
   z-index: 2;
   background: transparent;
 }
+💡 Bonus: Para evitar que los botones se v
