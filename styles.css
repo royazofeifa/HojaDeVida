@@ -146,16 +146,16 @@ body {
     align-items: center;
     text-align: center;
   }
-  
+
   .profile-pic {
     margin: 0 auto; /* Centra la imagen perfectamente */
   }
-  
+
   .header-info {
     width: 100%;
     text-align: center;
   }
-  
+
   .contact-info {
     justify-content: center;
   }
@@ -401,6 +401,9 @@ p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, background-color 0.3s ease;
   will-change: transform;
+  /* --- Ajustes para evitar el desbordamiento de texto --- */
+  box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho/alto */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
 
 .job:hover {
@@ -412,12 +415,17 @@ p {
 ul {
   padding-left: 1.5rem;
   margin-top: 0.6rem;
+  /* --- Ajustes para asegurar que las listas manejen bien el espacio --- */
+  list-style-position: inside; /* Mueve los marcadores de lista dentro del contenido */
 }
 
 ul li {
   margin-bottom: 0.6rem;
   line-height: 1.6;
   font-size: 0.97rem;
+  /* --- Ajustes para que el texto dentro de los li se rompa si es necesario --- */
+  word-wrap: break-word;    /* Permite que las palabras largas se rompan y pasen a la siguiente línea */
+  overflow-wrap: break-word; /* Otra propiedad para manejar saltos de línea, más moderna */
 }
 
 /* Technical Columns */
@@ -703,7 +711,8 @@ html {
     font-size: 1.8rem;
   }
 
-  .header-info p, .subtitle {
+  .header-info p,
+  .subtitle {
     font-size: 1rem;
   }
 }
@@ -713,7 +722,7 @@ html {
   -webkit-appearance: none;
   -moz-appearance: textfield;
   appearance: none;
-  
+
   /* Elimina flechas/spinners específicamente */
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button,
@@ -723,7 +732,7 @@ html {
     display: none;
     margin: 0;
   }
-  
+
   /* Firefox */
   &[type="number"] {
     -moz-appearance: textfield;
@@ -731,10 +740,6 @@ html {
 }
 
 /* Solución alternativa si persiste - convertir el enlace tel en botón */
-.contact-info a.tel-link {
-  pointer-events: none; /* Desactiva el comportamiento de enlace temporalmente */
-}
-
 .contact-info button.tel-button {
   display: inline-flex;
   background: #ffffff;
@@ -780,23 +785,4 @@ html {
   bottom: 0;
   z-index: 2;
   background: transparent;
-}
-@media screen and (max-width: 700px) {
-  section.reveal {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  section.reveal .job {
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
-section.reveal + section.reveal {
-  margin-top: 2rem;
-}
-
-section.reveal .job:last-child {
-  margin-bottom: 2rem;
 }
