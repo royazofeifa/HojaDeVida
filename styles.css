@@ -629,3 +629,138 @@ html {
     grid-template-columns: 1fr;
   }
 }
+.contact-info {
+  width: 100%;
+  overflow-x: hidden; /* evita desbordamiento */
+  justify-content: center; /* centrado en responsive */
+}
+.contact-info a {
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .cv-container {
+    padding: 2rem;
+  }
+
+  .header-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .header-info {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .header-info h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info {
+    justify-content: center;
+  }
+
+  .contact-info a {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* Corrección adicional para móviles muy pequeños (opcional) */
+@media screen and (max-width: 400px) {
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-info p, .subtitle {
+    font-size: 1rem;
+  }
+}
+/* Añade esto al final de tu CSS */
+.contact-info a[href^="tel:"] {
+  /* Elimina estilos nativos en todos los navegadores */
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  
+  /* Elimina flechas/spinners específicamente */
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button,
+  &::-webkit-clear-button,
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    display: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* Solución alternativa si persiste - convertir el enlace tel en botón */
+.contact-info a.tel-link {
+  pointer-events: none; /* Desactiva el comportamiento de enlace temporalmente */
+}
+
+.contact-info button.tel-button {
+  display: inline-flex;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  color: #101111;
+  cursor: pointer;
+  /* Copia todos los demás estilos de .contact-info a aquí */
+}
+.contact-info a[href^="https://wa.me/"] {
+  /* Elimina los controles numéricos en todos los navegadores */
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+/* Elimina específicamente los spinners en Chrome/Safari */
+.contact-info a[href^="https://wa.me/"]::-webkit-inner-spin-button,
+.contact-info a[href^="https://wa.me/"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  display: none !important;
+}
+
+/* Elimina los controles en Firefox */
+.contact-info a[href^="https://wa.me/"] {
+  -moz-appearance: textfield !important;
+}
+
+/* Solución definitiva que mantiene el diseño */
+.contact-info a.phone-link {
+  position: relative;
+}
+
+.contact-info a.phone-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: transparent;
+}
