@@ -397,13 +397,13 @@ p {
   border-left: 5px solid var(--main-color);
   padding: 1.2rem 1.5rem;
   border-radius: 12px;
-  margin-bottom: 1.5rem;
+  /* Ajuste clave: Aumentar el margen inferior para separar los divs */
+  margin-bottom: 2.5rem; /* Aumentado de 1.5rem para mayor separación */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, background-color 0.3s ease;
   will-change: transform;
-  /* --- Ajustes para evitar el desbordamiento de texto --- */
-  box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho/alto */
-  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  box-sizing: border-box;
+  overflow: hidden; /* Esto ayuda a contener cualquier contenido que se desborde internamente */
 }
 
 .job:hover {
@@ -415,17 +415,15 @@ p {
 ul {
   padding-left: 1.5rem;
   margin-top: 0.6rem;
-  /* --- Ajustes para asegurar que las listas manejen bien el espacio --- */
-  list-style-position: inside; /* Mueve los marcadores de lista dentro del contenido */
+  list-style-position: inside;
 }
 
 ul li {
   margin-bottom: 0.6rem;
   line-height: 1.6;
   font-size: 0.97rem;
-  /* --- Ajustes para que el texto dentro de los li se rompa si es necesario --- */
-  word-wrap: break-word;    /* Permite que las palabras largas se rompan y pasen a la siguiente línea */
-  overflow-wrap: break-word; /* Otra propiedad para manejar saltos de línea, más moderna */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Technical Columns */
