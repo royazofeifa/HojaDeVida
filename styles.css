@@ -565,3 +565,67 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+@media screen and (max-width: 700px) {
+  .cv-container {
+    padding: 1.2rem;
+    margin: 1rem auto;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-info h1 {
+    font-size: 1.6rem;
+    word-break: break-word;
+  }
+
+  .header-info p,
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .contact-info a {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  section.reveal {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
