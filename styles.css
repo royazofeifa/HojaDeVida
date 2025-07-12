@@ -1,0 +1,563 @@
+/* Dentro de styles.css */
+
+:root {
+  --main-color: #003049;
+  --accent-color: #0077b6;
+  --light-bg: #f8f9fa;
+  --text-color: #1b1b1b;
+  --hover-color: #0096c7;
+  --job-bg: #edf2f4;
+  --job-hover: #e2eaf1;
+  --title-bg: #001219;
+  --link-color: #005f73;
+  /* Eliminado: --background-gradient ya que tsParticles manejará el fondo */
+}
+
+[data-theme="dark"] {
+  --main-color: #00bcd4;
+  --accent-color: #0097a7;
+  --light-bg: #121212;
+  --text-color: #e0e0e0;
+  --hover-color: #40c4ff;
+  --job-bg: #222831;
+  --job-hover: #394867;
+  --title-bg: #000a12;
+  --link-color: #80d8ff;
+  /* Eliminado: --background-gradient ya que tsParticles manejará el fondo */
+}
+
+/* Fondo animado y cuerpo base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Roboto", "Open Sans", sans-serif;
+  background-color: #000; /* Fondo base negro, tsParticles dibujará sobre esto */
+  /* Eliminado: background, background-size, animation para gradientBackground */
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative; /* Necesario para que z-index funcione correctamente */
+  z-index: 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Eliminado: @keyframes gradientBackground, ya no es necesario */
+
+/* Contenedor de las partículas que cubrirá todo el fondo */
+#particles-js {
+  position: fixed; /* Fija el div de partículas a la ventana */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* ¡IMPORTANTE! Envía este div al fondo, detrás de todo el contenido del CV */
+  background-color: #000; /* Fondo negro para las partículas */
+}
+
+/* Hoja principal del CV */
+.cv-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: var(
+    --light-bg
+  ); /* Fondo del CV, para que el contenido sea legible */
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(255, 255, 255, 0.08),
+    0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  position: relative; /* Asegura que el contenido del CV esté encima de las partículas */
+  z-index: 1; /* El contenido del CV estará por encima de las partículas */
+}
+
+.cv-container:hover {
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.1), 0 0 60px rgba(0, 140, 255, 0.2);
+}
+
+/* HEADER */
+.cv-header {
+  background: linear-gradient(135deg, var(--main-color), var(--accent-color));
+  padding: 2.5rem;
+  border-radius: 18px;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.8); /* Borde blanco semi-transparente */
+  box-shadow: 0 0 15px rgba(0, 140, 255, 0.4),
+    /* Sombra inicial con un resplandor azulado */ 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave para profundidad */
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out,
+    filter 0.4s ease-out, border-color 0.4s ease-out; /* Transiciones suaves para todos los cambios */
+  will-change: transform, box-shadow; /* Optimización de rendimiento para animaciones */
+  cursor: pointer;
+
+  /* Animación de "pulso" sutil al cargar la página */
+  animation: initialPulse 2s infinite alternate ease-in-out;
+}
+
+/* Keyframes para la animación de pulso inicial */
+@keyframes initialPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(0, 140, 255, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1.01); /* Pequeño pulso */
+    box-shadow: 0 0 25px rgba(0, 140, 255, 0.6), 0 0 8px rgba(0, 0, 0, 0.4); /* Resplandor más fuerte */
+  }
+}
+
+.profile-pic:hover {
+  transform: scale(1.1) rotate(3deg); /* Escala y rotación un poco más pronunciadas */
+  border-color: var(--hover-color); /* El borde se vuelve el color de hover */
+  box-shadow: 0 0 30px var(--hover-color),
+    /* Resplandor principal con el color de hover */ 0 0 60px
+      rgba(0, 140, 255, 0.3),
+    /* Resplandor secundario más difuso */ 0 10px 25px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidad */
+  filter: brightness(1.2) contrast(1.05); /* Ligeramente más brillante y contrastado */
+}
+
+/* La clase glowing-click (del JS) se mantiene y se complementa */
+.profile-pic.glowing-click {
+  box-shadow: 0 0 18px 6px rgba(0, 255, 255, 0.6),
+    /* Brillo cian al click */ 0 0 30px 10px rgba(0, 255, 255, 0.4); /* Capa adicional de brillo */
+  animation: none; /* Detiene la animación de pulso inicial para que predomine el brillo de click */
+}
+
+/* --- Ajustes para el tema oscuro --- */
+[data-theme="dark"] .profile-pic {
+  border-color: rgba(255, 255, 255, 0.7); /* Borde blanco un poco menos opaco */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4),
+    /* Resplandor verde para modo oscuro */ 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] @keyframes initialPulse {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6), 0 0 8px rgba(0, 0, 0, 0.4);
+  }
+}
+
+[data-theme="dark"] .profile-pic:hover {
+  border-color: #00ff00; /* Borde verde al hover */
+  box-shadow: 0 0 30px #00ff00,
+    /* Resplandor verde principal */ 0 0 60px rgba(0, 255, 0, 0.3),
+    /* Resplandor secundario verde */ 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.header-info h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff; /* Color inicial del texto */
+  position: relative;
+  overflow: hidden; /* Oculta lo que se desborda para el efecto de entrada */
+  padding-bottom: 5px; /* Espacio para la línea inferior */
+
+  /* Animación de entrada similar a 'reveal' */
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  animation: h1Reveal 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards; /* Ajusta el tiempo a tu gusto */
+  animation-delay: 0.5s; /* Para que aparezca después del contenedor del CV */
+}
+
+/* Animación de entrada del H1 */
+@keyframes h1Reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0); /* Sin sombra al inicio */
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.02); /* Pequeño rebote */
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Brillo temporal */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0); /* Vuelve a sin sombra */
+  }
+}
+
+/* Línea inferior (similar a la que tenías) */
+.header-info h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Ajusta a 0 para que esté justo debajo del texto */
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--hover-color); /* Usa tu color de hover */
+  transition: width 0.4s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre el H1 */
+.header-info h1:hover {
+  color: var(--hover-color); /* Cambia el color al pasar el mouse */
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.3); /* Un brillo más intenso */
+}
+
+/* Expansión de la línea al pasar el mouse */
+.header-info h1:hover::after {
+  width: 100%;
+}
+
+.header-info p {
+  font-size: 1.2rem;
+  margin: 0.4rem 0 1.2rem;
+  color: #e0f7f7;
+}
+
+/* Subtítulo debajo del nombre, con la animación de escritura */
+.subtitle {
+  font-size: 1.2rem;
+  color: #e0f7f7;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(40, end) forwards, blink 0.8s step-end infinite;
+  max-width: 100%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    border-right: 2px solid rgba(255, 255, 255, 0.75); /* Show cursor during typing */
+  }
+  to {
+    width: 100%;
+    border-right: none; /* Remove cursor at end of typing */
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  position: relative;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  /* CAMBIOS PARA MÁXIMA VISIBILIDAD DE LOS ENLACES DE CONTACTO */
+  background: #ffffff; /* Fondo del botón blanco puro para contraste */
+  border: 1px solid #cccccc; /* Borde gris claro para definición */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de elevación */
+  text-decoration: none;
+  font-weight: 600; /* Texto más negrita */
+  color: #101111; /* Color del texto negro oscuro para que se vea bien */
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-info a::before {
+  content: "";
+  position: absolute;
+  left: -75%;
+  top: 0;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(0, 150, 199, 0.2),
+    /* Un brillo sutil del hover-color al pasar */ transparent
+  );
+  transform: skewX(-20deg);
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+
+.contact-info a:hover {
+  background-color: var(
+    --hover-color
+  ); /* El fondo se vuelve tu color de hover */
+  color: white; /* El texto se vuelve blanco sobre el color de hover */
+  transform: scale(1.05);
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 118, 182, 0.3); /* Sombra ligeramente más fuerte en hover */
+}
+
+.contact-info a:hover::before {
+  left: 100%;
+}
+
+/* Sections */
+h2 {
+  color: var(--main-color);
+  margin: 2rem 0 1rem;
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 1.2rem 0 0.6rem;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+h3:hover {
+  color: var(--main-color);
+}
+
+h3 span {
+  font-weight: normal;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Job Experience */
+.job {
+  background-color: var(--job-bg);
+  border-left: 5px solid var(--main-color);
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  will-change: transform; /* Helps with parallax animation */
+}
+
+.job:hover {
+  transform: translateY(-4px);
+  background-color: var(--job-hover);
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5rem;
+  margin-top: 0.6rem;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  font-size: 0.97rem;
+}
+
+/* Technical Columns */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem 1.5rem;
+  margin-top: 1.2rem;
+}
+
+/* Reveal Animations */
+section.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+  padding: 20px; /* Adjust this value as preferred */
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  background-color: var(--light-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+section.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section hover styles */
+section.reveal:hover {
+  box-shadow: 0 0 15px rgba(0, 140, 255, 0.2),
+    /* Aura sutil */ 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra de elevación */
+  transform: translateY(-3px); /* Ligera elevación */
+  transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Ajustes para el tema oscuro */
+[data-theme="dark"] section.reveal:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2),
+    /* Aura verde en modo oscuro */ 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+  .cv-container {
+    padding: 1.2rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-info h1 {
+    font-size: 2rem;
+  }
+
+  .header-info p {
+    font-size: 1rem;
+  }
+
+  /* Adjustment for mobile padding if needed */
+  section.reveal {
+    padding: 15px; /* Slightly less padding for small screens */
+  }
+}
+
+/* Tooltip for JS effects */
+.custom-tooltip {
+  position: fixed;
+  background: #0ff;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 12px rgba(0, 255, 255, 0.2);
+  z-index: 9999;
+  animation: fadeIn 0.2s ease-out;
+  pointer-events: none; /* Ensures the tooltip doesn't interfere with mouse events */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+[data-theme="dark"] a {
+  color: var(--accent-color);
+}
+
+/* Botón de tema */
+.theme-toggle {
+  /* Asegúrate de que el ID en HTML es 'theme-toggle' */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Asegura que esté por encima de todo */
+}
+/* Estilo de la barra de desplazamiento (Scrollbar) */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo transparente */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color); /* Color del "pulgar" */
+  border-radius: 5px;
+  border: 2px solid transparent; /* Para que el pulgar sea más delgado */
+  background-clip: content-box; /* Asegura que el borde se vea alrededor del color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color); /* Color al pasar el mouse */
+}
+
+/* Para navegadores Firefox (menos personalizable) */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para el tema oscuro de la barra de desplazamiento */
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: #00ff00; /* Verde en modo oscuro */
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background-color: #90ee90; /* Verde claro al hover */
+}
+
+[data-theme="dark"] html {
+  scrollbar-color: #00ff00 rgba(0, 0, 0, 0.1);
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* ¡Esto es crucial para que esté detrás! */
+  background-color: transparent; /* Permite ver el fondo del body */
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  /* Asegúrate de que esta clase exista */
+  opacity: 1;
+  transform: translateY(0);
+}
