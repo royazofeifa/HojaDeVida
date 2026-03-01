@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Roy Alexander Azofeifa Muñoz | Systems Engineer</title>
+<style>
+/* ===== ORIGINAL STYLES (exactly as provided, unchanged except photo addition) ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #1c2b36, #2c5364);
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+    position: relative;
+}
+
+.cv-container {
+    background: #ffffff;
+    max-width: 1150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.sidebar {
+    background: #0d1b2a;
+    color: white;
+    padding: 35px;
+}
+
+/* ===== NEW: profile photo styles - responsive and elegant ===== */
+.profile-photo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00b4d8;
+    box-shadow: 0 10px 25px rgba(0, 180, 216, 0.3);
+    transition: transform 0.3s ease;
+    background: #fff; /* fallback if image missing */
+}
+
+.profile-photo img:hover {
+    transform: scale(1.02);
+    border-color: #48cae4;
+}
+
+/* responsive for tablets */
+@media (max-width: 700px) {
+    .profile-photo img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* responsive for mobile */
+@media (max-width: 500px) {
+    .profile-photo img {
+        width: 110px;
+        height: 110px;
+        border-width: 3px;
+    }
+}
+
+.sidebar h2 {
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.main {
+    padding: 45px;
+}
+
+.main h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #0d1b2a;
+}
+
+.main h3 {
+    margin-top: 5px;
+    font-weight: normal;
+    color: #555;
+}
+
+.contact {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+}
+
+.section {
+    margin-top: 35px;
+}
+
+.section h2 {
+    font-size: 20px;
+    border-left: 5px solid #0077b6;
+    padding-left: 10px;
+    color: #0d1b2a;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h4 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.job span {
+    font-size: 13px;
+    color: #555;
+}
+
+.job ul {
+    margin-top: 8px;
+}
+
+.job ul li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #023e8a;
+}
+
+@media(max-width: 900px){
+    .cv-container{
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        text-align: center;
+    }
+    .profile-photo {
+        display: flex;
+        justify-content: center;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Neuronal network canvas background (interactive, behind content) -->
+<canvas id="neuroCanvas"></canvas>
+
+<div class="cv-container">
+
+<div class="sidebar">
+
+<!-- ===== PROFILE PHOTO ADDED HERE ===== -->
+<div class="profile-photo">
+    <img src="roy.jpeg" alt="Roy Alexander Azofeifa Muñoz" 
+         onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22160%22 height=%22160%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230d1b2a%22 stroke=%22%2300b4d8%22 stroke-width=%224%22/><text x=%2250%22 y=%2265%22 font-size=%2230%22 text-anchor=%22middle%22 fill=%22%23ffffff%22>RA</text></svg>';">
+</div>
+
+<h2>Professional Summary</h2>
+<p style="font-size:14px;">
+Systems Engineer with expertise in IT Infrastructure, Network Administration (CCNA), Cybersecurity, VPN management, Software Quality Assurance, and Level 1 & 2 Technical Support. 
+Strong background in Azure Fundamentals, data analysis, enterprise networking, and continuous improvement methodologies. 
+Proven experience in hybrid and remote environments supporting international operations.
+</p>
+
+<h2>Core Technical Skills</h2>
+<ul>
+<li>Network Administration (CCNA, VLAN, Routing, Switching)</li>
+<li>Cybersecurity & Ethical Hacking</li>
+<li>VPN (OpenVPN, L2TP, PPTP)</li>
+<li>Server & IT Infrastructure Management</li>
+<li>Microsoft Azure Fundamentals</li>
+<li>Software Quality Assurance (QA)</li>
+<li>JavaScript Programming</li>
+<li>Power BI & Data Analysis</li>
+<li>Hardware & IT Support (L1/L2)</li>
+<li>HRIS Systems</li>
+</ul>
+
+<h2>Languages</h2>
+<ul>
+<li>Spanish: Native</li>
+<li>English: Advanced (C1 – CEFR, INA Certified 2024)</li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<h1>Roy Alexander Azofeifa Muñoz</h1>
+<h3>Systems Engineer | IT Infrastructure | Cybersecurity | QA</h3>
+<div class="contact">
+Costa Rica | +506 8333 5665 | royazofeifa@gmail.com
+</div>
+
+<div class="section">
+<h2>Professional Experience</h2>
+
+<div class="job">
+<h4>Robotics & IT Instructor</h4>
+<span>Colegio Ecoturístico del Pacífico | Feb 2025 – Present</span>
+<ul>
+<li>Delivered STEAM-based robotics and programming education.</li>
+<li>Developed computational thinking and analytical skills in students.</li>
+<li>Applied project-based learning methodologies.</li>
+</ul>
+</div>
+
+<div class="job">
+<h4>IT Infrastructure & Support Technician</h4>
+<span>Inter-Tech Costa Rica | Aug 2019 – Nov 2025</span>
+<ul>
+<li>Provided Level 1 and Level 2 technical support.</li>
+<li>Administered servers, enterprise networks, CCTV systems, and workstations.</li>
+<li>Performed installations, upgrades, and preventive maintenance.</li>
+</ul>
+</div>
+
+<div class="job">
+<h4>Network & Systems Monitoring Technician</h4>
+<span>STS Security | Jan 2023 – Nov 2025</span>
+<ul>
+<li>Monitored network performance and minimized downtime.</li>
+<li>Managed secure VPN connections and remote access.</li>
+<li>Generated technical optimization reports.</li>
+</ul>
+</div>
+
+<div class="job">
+<h4>Employee Resource Center Specialist</h4>
+<span>Amazon | Oct 2020 – Aug 2023</span>
+<ul>
+<li>Delivered HR support across North and South America.</li>
+<li>Managed employee relations and HRIS documentation.</li>
+<li>Ensured compliance with policies and regulations.</li>
+</ul>
+</div>
+
+<div class="job">
+<h4>Customer Service & Quality Control Manager</h4>
+<span>GAIA Hotel & Reserve | Jan 2012 – Dec 2018</span>
+<ul>
+<li>Improved service quality and operational efficiency.</li>
+<li>Implemented continuous improvement systems.</li>
+<li>Led staff development initiatives.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Education</h2>
+<ul>
+<li><strong>Professional Master’s Degree in Education Sciences (Emphasis in Teaching)</strong> – Expected April 2026</li>
+<li><strong>Bachelor in Systems Engineering</strong> – April 2023</li>
+<li><strong>High School Diploma</strong> – 2011</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Technical Certifications & Professional Training</h2>
+
+<ul>
+<li>Software Quality Controller (Technical Diploma) – INA | 561 hours | December 2023</li>
+<li>Computer Networking (CCNA – Technical Diploma) – INA | 280 hours | November 2023</li>
+<li>Customer Service Executive (Technical Diploma) – INA | 192 hours | March 2019</li>
+<li>CCNAv7: ENSA – Cisco Networking Academy | August 2023</li>
+<li>CCNAv7: SRWE – Cisco Networking Academy | March 2023</li>
+<li>CCNAv7: ITN – Cisco Networking Academy | December 2022</li>
+<li>Cybersecurity Essentials – Cisco Networking Academy | December 2022</li>
+<li>Ethical Hacking / Red Team – March 2023</li>
+<li>Frontend Development – 40 hours | 2025</li>
+<li>Software Tester – May 2023</li>
+<li>JavaScript Programming – 2023</li>
+<li>Algorithm Design Techniques – 2023</li>
+<li>Power BI Fundamentals – November 2023</li>
+<li>Electrical Circuits I – May 2023</li>
+<li>IT Essentials – Cisco Networking Academy</li>
+<li>Microsoft Azure Fundamentals – December 2023</li>
+</ul>
+
+</div>
+
+<button onclick="window.print()">Download PDF</button>
+
+</div>
+</div>
+
+<script>
+// ===== INTERACTIVE NEURONAL NETWORK BACKGROUND =====
+// (unchanged, exactly as before)
+(function() {
+    const canvas = document.getElementById('neuroCanvas');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let nodes = [];
+    let mouseX = 0, mouseY = 0;
+    let animationFrame;
+    
+    const NODE_COUNT = 50;
+    const CONNECTION_DISTANCE = 180;
+    const NODE_RADIUS = 2;
+    const NODE_COLOR = 'rgba(0, 180, 255, 0.6)';
+    const EDGE_COLOR = 'rgba(100, 210, 255, 0.25)';
+    const MOUSE_INFLUENCE_RADIUS = 140;
+    
+    function initNodes() {
+        nodes = [];
+        for (let i = 0; i < NODE_COUNT; i++) {
+            nodes.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                vx: (Math.random() - 0.5) * 0.4,
+                vy: (Math.random() - 0.5) * 0.4,
+            });
+        }
+    }
+    
+    function resizeCanvas() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+        initNodes();
+    }
+    
+    window.addEventListener('resize', () => {
+        resizeCanvas();
+    });
+    
+    window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+    
+    window.addEventListener('mouseleave', () => {
+        mouseX = -1000;
+        mouseY = -1000;
+    });
+    
+    function updateNodes() {
+        for (let i = 0; i < nodes.length; i++) {
+            let node = nodes[i];
+            
+            node.vx += (Math.random() - 0.5) * 0.08;
+            node.vy += (Math.random() - 0.5) * 0.08;
+            
+            node.vx *= 0.98;
+            node.vy *= 0.98;
+            
+            const dx = node.x - mouseX;
+            const dy = node.y - mouseY;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            
+            if (dist < MOUSE_INFLUENCE_RADIUS) {
+                const force = (1 - dist / MOUSE_INFLUENCE_RADIUS) * 0.5;
+                const angle = Math.atan2(dy, dx);
+                node.vx += Math.cos(angle) * force;
+                node.vy += Math.sin(angle) * force;
+            }
+            
+            node.x += node.vx;
+            node.y += node.vy;
+            
+            if (node.x < 0) { node.x = width; }
+            if (node.x > width) { node.x = 0; }
+            if (node.y < 0) { node.y = height; }
+            if (node.y > height) { node.y = 0; }
+        }
+    }
+    
+    function draw() {
+        ctx.clearRect(0, 0, width, height);
+        
+        ctx.strokeStyle = EDGE_COLOR;
+        ctx.lineWidth = 1;
+        
+        for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+                const a = nodes[i];
+                const b = nodes[j];
+                const dx = a.x - b.x;
+                const dy = a.y - b.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                
+                if (dist < CONNECTION_DISTANCE) {
+                    let intensity = 1 - (dist / CONNECTION_DISTANCE);
+                    const mx = (mouseX + mouseY) / 2;
+                    const variation = Math.sin(dist * 0.02 + mx * 0.01) * 0.2 + 0.8;
+                    intensity *= variation;
+                    
+                    ctx.globalAlpha = intensity * 0.35;
+                    ctx.beginPath();
+                    ctx.moveTo(a.x, a.y);
+                    ctx.lineTo(b.x, b.y);
+                    ctx.stroke();
+                }
+            }
+        }
+        
+        ctx.fillStyle = NODE_COLOR;
+        ctx.globalAlpha = 0.8;
+        for (let node of nodes) {
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, NODE_RADIUS + 1, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        
+        if (mouseX > 0 && mouseY > 0 && mouseX < width && mouseY < height) {
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+            ctx.beginPath();
+            ctx.arc(mouseX, mouseY, 18, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+        
+        ctx.globalAlpha = 1.0;
+    }
+    
+    function animate() {
+        updateNodes();
+        draw();
+        animationFrame = requestAnimationFrame(animate);
+    }
+    
+    resizeCanvas();
+    animate();
+    
+    window.addEventListener('beforeunload', () => {
+        if (animationFrame) cancelAnimationFrame(animationFrame);
+    });
+})();
+</script>
+
+<style>
+/* canvas positioning to act as background */
+#neuroCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* body background fallback */
+body {
+    background: #0f2027;
+}
+</style>
+
+</body>
+</html>
