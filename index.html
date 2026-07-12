@@ -1,490 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<title>Roy Alexander Azofeifa Muñoz | Systems Engineer</title>
-<style>
-/* ===== ORIGINAL STYLES (exactly as provided, unchanged except photo addition) ===== */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #1c2b36, #2c5364);
-    display: flex;
-    justify-content: center;
-    padding: 40px 10px;
-    position: relative;
-}
-
-.cv-container {
-    background: #ffffff;
-    max-width: 1150px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-}
-
-.sidebar {
-    background: #0d1b2a;
-    color: white;
-    padding: 35px;
-}
-
-/* ===== NEW: profile photo styles - responsive and elegant ===== */
-.profile-photo {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.profile-photo img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #00b4d8;
-    box-shadow: 0 10px 25px rgba(0, 180, 216, 0.3);
-    transition: transform 0.3s ease;
-    background: #fff; /* fallback if image missing */
-}
-
-.profile-photo img:hover {
-    transform: scale(1.02);
-    border-color: #48cae4;
-}
-
-/* responsive for tablets */
-@media (max-width: 700px) {
-    .profile-photo img {
-        width: 130px;
-        height: 130px;
-    }
-}
-
-/* responsive for mobile */
-@media (max-width: 500px) {
-    .profile-photo img {
-        width: 110px;
-        height: 110px;
-        border-width: 3px;
-    }
-}
-
-.sidebar h2 {
-    border-bottom: 2px solid #00b4d8;
-    padding-bottom: 6px;
-    margin-top: 30px;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar li {
-    margin-bottom: 8px;
-    font-size: 13px;
-}
-
-.main {
-    padding: 45px;
-}
-
-.main h1 {
-    margin: 0;
-    font-size: 30px;
-    color: #0d1b2a;
-}
-
-.main h3 {
-    margin-top: 5px;
-    font-weight: normal;
-    color: #555;
-}
-
-.contact {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #444;
-}
-
-.section {
-    margin-top: 35px;
-}
-
-.section h2 {
-    font-size: 20px;
-    border-left: 5px solid #0077b6;
-    padding-left: 10px;
-    color: #0d1b2a;
-}
-
-.job {
-    margin-bottom: 20px;
-}
-
-.job h4 {
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-.job span {
-    font-size: 13px;
-    color: #555;
-}
-
-.job ul {
-    margin-top: 8px;
-}
-
-.job ul li {
-    margin-bottom: 6px;
-    font-size: 14px;
-}
-
-button {
-    margin-top: 25px;
-    padding: 10px 20px;
-    background: #0077b6;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-button:hover {
-    background: #023e8a;
-}
-
-@media(max-width: 900px){
-    .cv-container{
-        grid-template-columns: 1fr;
-    }
-    .sidebar {
-        text-align: center;
-    }
-    .profile-photo {
-        display: flex;
-        justify-content: center;
-    }
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículum profesional de Roy Alexander Azofeifa Muñoz, ingeniero de sistemas especializado en infraestructura TI, redes, ciberseguridad, QA y soporte técnico.">
+  <meta name="theme-color" content="#07111f">
+  <title>Roy Alexander Azofeifa | Ingeniero de Sistemas</title>
+  <style>
+    :root{--bg:#07111f;--bg2:#0b192b;--panel:rgba(13,29,48,.84);--card:rgba(18,39,63,.72);--text:#edf7ff;--muted:#9db2c7;--line:rgba(146,202,232,.16);--cyan:#48d6e8;--blue:#5d8cff;--mint:#67e8b7;--shadow:0 24px 80px rgba(0,0,0,.32);--radius:24px}
+    [data-theme="light"]{--bg:#edf5fa;--bg2:#dfeef6;--panel:rgba(255,255,255,.88);--card:rgba(255,255,255,.72);--text:#10243a;--muted:#536a80;--line:rgba(30,89,125,.14);--shadow:0 24px 70px rgba(44,83,110,.15)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 15% 5%,rgba(72,214,232,.13),transparent 27%),linear-gradient(145deg,var(--bg),var(--bg2));line-height:1.65;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,#000,transparent 88%);z-index:-1}
+    #constellation{position:fixed;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
+    .nav{position:sticky;top:14px;z-index:20;margin-top:14px}.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:11px 14px 11px 20px;border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:0 10px 40px rgba(0,0,0,.14);backdrop-filter:blur(18px)}
+    .brand{display:flex;align-items:center;gap:11px;color:var(--text);font-weight:800;text-decoration:none;letter-spacing:-.02em}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;color:#06121f;background:linear-gradient(135deg,var(--cyan),var(--mint));font-size:.78rem}.nav-links{display:flex;align-items:center;gap:5px}.nav-links a,.icon-btn{border:0;border-radius:11px;padding:9px 12px;background:transparent;color:var(--muted);font:inherit;font-size:.88rem;text-decoration:none;cursor:pointer}.nav-links a:hover,.icon-btn:hover{color:var(--text);background:var(--line)}
+    .hero{min-height:78vh;display:grid;grid-template-columns:1.25fr .75fr;gap:58px;align-items:center;padding:86px 0 60px}.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;padding:7px 12px;border:1px solid rgba(103,232,183,.28);border-radius:999px;color:var(--mint);background:rgba(103,232,183,.07);font-size:.82rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.pulse{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(103,232,183,.6);animation:pulse 2s infinite}@keyframes pulse{70%{box-shadow:0 0 0 9px transparent}}
+    h1{margin:0;font-size:clamp(2.9rem,7vw,6.2rem);line-height:.96;letter-spacing:-.065em}.gradient{background:linear-gradient(110deg,var(--cyan),var(--blue) 55%,var(--mint));background-clip:text;color:transparent}.lead{max-width:750px;margin:24px 0;color:var(--muted);font-size:clamp(1.02rem,1.6vw,1.22rem)}.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}.tag{padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.035);font-size:.82rem;color:var(--muted)}
+    .actions{display:flex;flex-wrap:wrap;gap:11px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border:1px solid var(--line);border-radius:13px;color:var(--text);background:var(--card);text-decoration:none;font-weight:750;cursor:pointer}.btn.primary{border:0;color:#06121f;background:linear-gradient(135deg,var(--cyan),var(--mint));box-shadow:0 12px 32px rgba(72,214,232,.18)}.btn:hover{transform:translateY(-2px)}
+    .portrait-wrap{position:relative;justify-self:center}.portrait-wrap:before,.portrait-wrap:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}.portrait-wrap:before{inset:-18px;background:conic-gradient(from 45deg,var(--cyan),transparent 32%,var(--blue),transparent 67%,var(--mint));animation:spin 15s linear infinite}.portrait-wrap:after{inset:-36px;border:1px solid var(--line)}@keyframes spin{to{transform:rotate(360deg)}}.portrait{position:relative;z-index:1;width:min(325px,64vw);aspect-ratio:1;border-radius:50%;object-fit:cover;border:9px solid var(--bg2);box-shadow:var(--shadow)}
+    section{padding:66px 0;scroll-margin-top:95px}.section-head{display:grid;grid-template-columns:.72fr 1.28fr;gap:30px;margin-bottom:30px}.kicker{color:var(--cyan);font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.section-head h2{margin:5px 0;font-size:clamp(2rem,4vw,3.25rem);line-height:1.04;letter-spacing:-.045em}.section-intro{align-self:end;margin:0;color:var(--muted);max-width:670px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{position:relative;padding:23px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,var(--card),rgba(255,255,255,.025));box-shadow:0 12px 40px rgba(0,0,0,.08);backdrop-filter:blur(12px);overflow:hidden}.card:after{content:"";position:absolute;inset:auto -35% -70% 25%;height:150px;background:radial-gradient(circle,rgba(72,214,232,.12),transparent 68%);pointer-events:none}.card-number{color:var(--cyan);font:700 .82rem ui-monospace,monospace}.card h3{margin:34px 0 8px;font-size:1.18rem}.card p{margin:0;color:var(--muted);font-size:.94rem}
+    .timeline{position:relative;display:grid;gap:15px;margin-left:15px}.timeline:before{content:"";position:absolute;left:7px;top:12px;bottom:12px;width:1px;background:linear-gradient(var(--cyan),var(--blue),transparent)}.job{position:relative;margin-left:31px;padding:22px 24px;border:1px solid var(--line);border-radius:19px;background:var(--card)}.job:before{content:"";position:absolute;left:-32px;top:29px;width:13px;height:13px;border:4px solid var(--bg2);border-radius:50%;background:var(--cyan);box-shadow:0 0 20px rgba(72,214,232,.65)}.job-top{display:flex;justify-content:space-between;gap:15px}.job h3{margin:0;font-size:1.16rem}.company{margin-top:3px;color:var(--cyan);font-weight:700}.date{white-space:nowrap;color:var(--muted);font-size:.85rem}.job ul{margin:12px 0 0;padding-left:19px;color:var(--muted)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.education-item{padding:19px 0;border-bottom:1px solid var(--line)}.education-item:last-child{border:0}.education-item h3{margin:0;font-size:1.05rem}.education-item p{margin:4px 0 0;color:var(--muted)}.cert-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.cert{padding:8px 11px;border:1px solid var(--line);border-radius:10px;color:var(--muted);background:rgba(255,255,255,.025);font-size:.84rem}
+    .contact-card{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:36px;border:1px solid rgba(72,214,232,.22);border-radius:30px;background:linear-gradient(125deg,rgba(72,214,232,.1),var(--card) 45%,rgba(93,140,255,.1));box-shadow:var(--shadow)}.contact-card h2{margin:0 0 8px;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.04em}.contact-card p{margin:0;color:var(--muted)}footer{padding:28px 0 45px;color:var(--muted);font-size:.86rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:22px}
+    .verify-block{margin-top:16px;padding-top:17px;border-top:1px solid var(--line)}.verify-note{margin:0 0 13px;color:var(--muted);font-size:.86rem}.credentials{display:grid;gap:9px}.credential{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:11px 12px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.025)}.credential strong{display:block;font-size:.88rem}.credential code{color:var(--cyan);font-size:.78rem}.credential-actions{display:flex;gap:5px}.mini-btn{border:1px solid var(--line);border-radius:8px;padding:6px 8px;color:var(--muted);background:transparent;font:inherit;font-size:.74rem;text-decoration:none;cursor:pointer}.mini-btn:hover{color:var(--text);background:var(--line)}.school-link{color:var(--cyan);text-decoration:none}.school-link:hover{text-decoration:underline}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:900px){.nav-links a{display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:65px}.portrait-wrap{grid-row:1}.lead{margin-inline:auto}.hero-tags,.actions{justify-content:center}.section-head{grid-template-columns:1fr}.section-intro{align-self:auto}.grid{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}.contact-card{grid-template-columns:1fr;text-align:center}.contact-card .actions{justify-content:center}}
+    @media(max-width:590px){.wrap{width:min(100% - 24px,1180px)}.nav{top:8px;margin-top:8px}.brand span:last-child{display:none}.hero{gap:38px;min-height:auto;padding:54px 0 30px}.grid{grid-template-columns:1fr}.job-top{display:block}.date{display:block;margin-top:7px}.job{padding:19px}.section-head{margin-bottom:21px}section{padding:48px 0}.contact-card{padding:25px}.footer-inner{display:block}.credential{grid-template-columns:1fr}.credential-actions{margin-top:4px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+    @media print{#constellation,.nav,.actions,.portrait-wrap:before,.portrait-wrap:after{display:none!important}body{background:#fff;color:#17283b}.wrap{width:100%}.hero{min-height:auto;padding:20px 0}.portrait{width:150px}.card,.job,.contact-card{background:#fff;box-shadow:none;break-inside:avoid}.reveal{opacity:1;transform:none}section{padding:25px 0}.contact-card{display:none}footer{padding-bottom:0}}
+  </style>
 </head>
 <body>
-
-<!-- Neuronal network canvas background (interactive, behind content) -->
-<canvas id="neuroCanvas"></canvas>
-
-<div class="cv-container">
-
-<div class="sidebar">
-
-<!-- ===== PROFILE PHOTO ADDED HERE ===== -->
-<div class="profile-photo">
-    <img src="roy.jpeg" alt="Roy Alexander Azofeifa Muñoz" 
-         onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22160%22 height=%22160%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230d1b2a%22 stroke=%22%2300b4d8%22 stroke-width=%224%22/><text x=%2250%22 y=%2265%22 font-size=%2230%22 text-anchor=%22middle%22 fill=%22%23ffffff%22>RA</text></svg>';">
-</div>
-
-<h2>Professional Summary</h2>
-<p style="font-size:14px;">
-Systems Engineer with expertise in IT Infrastructure, Network Administration (CCNA), Cybersecurity, VPN management, Software Quality Assurance, and Level 1 & 2 Technical Support. 
-Strong background in Azure Fundamentals, data analysis, enterprise networking, and continuous improvement methodologies. 
-Proven experience in hybrid and remote environments supporting international operations.
-</p>
-
-<h2>Core Technical Skills</h2>
-<ul>
-<li>Network Administration (CCNA, VLAN, Routing, Switching)</li>
-<li>Cybersecurity & Ethical Hacking</li>
-<li>VPN (OpenVPN, L2TP, PPTP)</li>
-<li>Server & IT Infrastructure Management</li>
-<li>Microsoft Azure Fundamentals</li>
-<li>Software Quality Assurance (QA)</li>
-<li>JavaScript Programming</li>
-<li>Power BI & Data Analysis</li>
-<li>Hardware & IT Support (L1/L2)</li>
-<li>HRIS Systems</li>
-</ul>
-
-<h2>Languages</h2>
-<ul>
-<li>Spanish: Native</li>
-<li>English: Advanced (C1 – CEFR, INA Certified 2024)</li>
-</ul>
-
-</div>
-
-<div class="main">
-
-<h1>Roy Alexander Azofeifa Muñoz</h1>
-<h3>Systems Engineer | IT Infrastructure | Cybersecurity | QA</h3>
-<div class="contact">
-Costa Rica | +506 8333 5665 | royazofeifa@gmail.com
-</div>
-
-<div class="section">
-<h2>Professional Experience</h2>
-
-<div class="job">
-<h4>Robotics & IT Instructor</h4>
-<span>Colegio Ecoturístico del Pacífico | Feb 2025 – Present</span>
-<ul>
-<li>Delivered STEAM-based robotics and programming education.</li>
-<li>Developed computational thinking and analytical skills in students.</li>
-<li>Applied project-based learning methodologies.</li>
-</ul>
-</div>
-
-<div class="job">
-<h4>IT Infrastructure & Support Technician</h4>
-<span>Inter-Tech Costa Rica | Aug 2019 – Nov 2025</span>
-<ul>
-<li>Provided Level 1 and Level 2 technical support.</li>
-<li>Administered servers, enterprise networks, CCTV systems, and workstations.</li>
-<li>Performed installations, upgrades, and preventive maintenance.</li>
-</ul>
-</div>
-
-<div class="job">
-<h4>Network & Systems Monitoring Technician</h4>
-<span>STS Security | Jan 2023 – Nov 2025</span>
-<ul>
-<li>Monitored network performance and minimized downtime.</li>
-<li>Managed secure VPN connections and remote access.</li>
-<li>Generated technical optimization reports.</li>
-</ul>
-</div>
-
-<div class="job">
-<h4>Employee Resource Center Specialist</h4>
-<span>Amazon | Oct 2020 – Aug 2023</span>
-<ul>
-<li>Delivered HR support across North and South America.</li>
-<li>Managed employee relations and HRIS documentation.</li>
-<li>Ensured compliance with policies and regulations.</li>
-</ul>
-</div>
-
-<div class="job">
-<h4>Customer Service & Quality Control Manager</h4>
-<span>GAIA Hotel & Reserve | Jan 2012 – Dec 2018</span>
-<ul>
-<li>Improved service quality and operational efficiency.</li>
-<li>Implemented continuous improvement systems.</li>
-<li>Led staff development initiatives.</li>
-</ul>
-</div>
-
-</div>
-
-<div class="section">
-<h2>Education</h2>
-<ul>
-<li><strong>Professional Master’s Degree in Education Sciences (Emphasis in Teaching)</strong> April 2026</li>
-<li><strong>Bachelor in Systems Engineering</strong> – April 2023</li>
-<li><strong>High School Diploma</strong> – 2011</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>Technical Certifications & Professional Training</h2>
-
-<ul>
-<li>Software Quality Controller (Technical Diploma) – INA | 561 hours | December 2023</li>
-<li>Computer Networking (CCNA – Technical Diploma) – INA | 280 hours | November 2023</li>
-<li>Customer Service Executive (Technical Diploma) – INA | 192 hours | March 2019</li>
-<li>CCNAv7: ENSA – Cisco Networking Academy | August 2023</li>
-<li>CCNAv7: SRWE – Cisco Networking Academy | March 2023</li>
-<li>CCNAv7: ITN – Cisco Networking Academy | December 2022</li>
-<li>Cybersecurity Essentials – Cisco Networking Academy | December 2022</li>
-<li>Ethical Hacking / Red Team – March 2023</li>
-<li>Frontend Development – 40 hours | 2025</li>
-<li>Software Tester – May 2023</li>
-<li>JavaScript Programming – 2023</li>
-<li>Algorithm Design Techniques – 2023</li>
-<li>Power BI Fundamentals – November 2023</li>
-<li>Electrical Circuits I – May 2023</li>
-<li>IT Essentials – Cisco Networking Academy</li>
-<li>Microsoft Azure Fundamentals – December 2023</li>
-</ul>
-
-</div>
-
-<button onclick="window.print()">Download PDF</button>
-
-</div>
-</div>
-
-<script>
-// ===== INTERACTIVE NEURONAL NETWORK BACKGROUND =====
-// (unchanged, exactly as before)
-(function() {
-    const canvas = document.getElementById('neuroCanvas');
-    if (!canvas) return;
-    
-    const ctx = canvas.getContext('2d');
-    let width, height;
-    let nodes = [];
-    let mouseX = 0, mouseY = 0;
-    let animationFrame;
-    
-    const NODE_COUNT = 50;
-    const CONNECTION_DISTANCE = 180;
-    const NODE_RADIUS = 2;
-    const NODE_COLOR = 'rgba(0, 180, 255, 0.6)';
-    const EDGE_COLOR = 'rgba(100, 210, 255, 0.25)';
-    const MOUSE_INFLUENCE_RADIUS = 140;
-    
-    function initNodes() {
-        nodes = [];
-        for (let i = 0; i < NODE_COUNT; i++) {
-            nodes.push({
-                x: Math.random() * width,
-                y: Math.random() * height,
-                vx: (Math.random() - 0.5) * 0.4,
-                vy: (Math.random() - 0.5) * 0.4,
-            });
-        }
-    }
-    
-    function resizeCanvas() {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        canvas.width = width;
-        canvas.height = height;
-        initNodes();
-    }
-    
-    window.addEventListener('resize', () => {
-        resizeCanvas();
-    });
-    
-    window.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
-    
-    window.addEventListener('mouseleave', () => {
-        mouseX = -1000;
-        mouseY = -1000;
-    });
-    
-    function updateNodes() {
-        for (let i = 0; i < nodes.length; i++) {
-            let node = nodes[i];
-            
-            node.vx += (Math.random() - 0.5) * 0.08;
-            node.vy += (Math.random() - 0.5) * 0.08;
-            
-            node.vx *= 0.98;
-            node.vy *= 0.98;
-            
-            const dx = node.x - mouseX;
-            const dy = node.y - mouseY;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-            
-            if (dist < MOUSE_INFLUENCE_RADIUS) {
-                const force = (1 - dist / MOUSE_INFLUENCE_RADIUS) * 0.5;
-                const angle = Math.atan2(dy, dx);
-                node.vx += Math.cos(angle) * force;
-                node.vy += Math.sin(angle) * force;
-            }
-            
-            node.x += node.vx;
-            node.y += node.vy;
-            
-            if (node.x < 0) { node.x = width; }
-            if (node.x > width) { node.x = 0; }
-            if (node.y < 0) { node.y = height; }
-            if (node.y > height) { node.y = 0; }
-        }
-    }
-    
-    function draw() {
-        ctx.clearRect(0, 0, width, height);
-        
-        ctx.strokeStyle = EDGE_COLOR;
-        ctx.lineWidth = 1;
-        
-        for (let i = 0; i < nodes.length; i++) {
-            for (let j = i + 1; j < nodes.length; j++) {
-                const a = nodes[i];
-                const b = nodes[j];
-                const dx = a.x - b.x;
-                const dy = a.y - b.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-                
-                if (dist < CONNECTION_DISTANCE) {
-                    let intensity = 1 - (dist / CONNECTION_DISTANCE);
-                    const mx = (mouseX + mouseY) / 2;
-                    const variation = Math.sin(dist * 0.02 + mx * 0.01) * 0.2 + 0.8;
-                    intensity *= variation;
-                    
-                    ctx.globalAlpha = intensity * 0.35;
-                    ctx.beginPath();
-                    ctx.moveTo(a.x, a.y);
-                    ctx.lineTo(b.x, b.y);
-                    ctx.stroke();
-                }
-            }
-        }
-        
-        ctx.fillStyle = NODE_COLOR;
-        ctx.globalAlpha = 0.8;
-        for (let node of nodes) {
-            ctx.beginPath();
-            ctx.arc(node.x, node.y, NODE_RADIUS + 1, 0, Math.PI * 2);
-            ctx.fill();
-        }
-        
-        if (mouseX > 0 && mouseY > 0 && mouseX < width && mouseY < height) {
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
-            ctx.beginPath();
-            ctx.arc(mouseX, mouseY, 18, 0, 2 * Math.PI);
-            ctx.fill();
-        }
-        
-        ctx.globalAlpha = 1.0;
-    }
-    
-    function animate() {
-        updateNodes();
-        draw();
-        animationFrame = requestAnimationFrame(animate);
-    }
-    
-    resizeCanvas();
-    animate();
-    
-    window.addEventListener('beforeunload', () => {
-        if (animationFrame) cancelAnimationFrame(animationFrame);
-    });
-})();
-</script>
-
-<style>
-/* canvas positioning to act as background */
-#neuroCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* body background fallback */
-body {
-    background: #0f2027;
-}
-</style>
-
+  <canvas id="constellation" aria-hidden="true"></canvas>
+  <nav class="nav wrap" aria-label="Navegación principal"><div class="nav-inner"><a class="brand" href="#inicio"><span class="brand-mark">RA</span><span>Roy Azofeifa</span></a><div class="nav-links"><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a><button class="icon-btn" id="langToggle" aria-label="Cambiar idioma">EN</button><button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">◐</button></div></div></nav>
+  <main>
+    <header class="hero wrap" id="inicio"><div class="reveal"><div class="eyebrow"><span class="pulse"></span>Disponible para nuevos retos</div><h1>Roy Alexander<br><span class="gradient">Azofeifa Muñoz</span></h1><p class="lead">Ingeniero de Sistemas especializado en infraestructura TI, redes, ciberseguridad, calidad de software y soporte técnico. Conecto tecnología, servicio y mejora continua para resolver problemas reales.</p><div class="hero-tags"><span class="tag">Infraestructura TI</span><span class="tag">CCNA</span><span class="tag">Ciberseguridad</span><span class="tag">QA</span><span class="tag">Soporte L1/L2</span><span class="tag">Inglés C1</span></div><div class="actions"><a class="btn primary" href="mailto:royazofeifa@gmail.com">Contactarme ↗</a><button class="btn" onclick="window.print()">Guardar como PDF</button></div></div><div class="portrait-wrap reveal"><img class="portrait" src="roy.jpeg" alt="Fotografía profesional de Roy Alexander Azofeifa Muñoz"></div></header>
+    <section id="perfil"><div class="wrap"><div class="section-head reveal"><div><span class="kicker">Perfil profesional</span><h2>Visión técnica.<br>Impacto humano.</h2></div><p class="section-intro">Experiencia en entornos presenciales, híbridos y remotos, apoyando operaciones tecnológicas e internacionales. Combino pensamiento analítico, comunicación clara y orientación a resultados.</p></div><div class="grid">
+      <article class="card reveal"><span class="card-number">01</span><h3>Infraestructura y soporte</h3><p>Soporte L1/L2, servidores, estaciones de trabajo, hardware, software, CCTV, mantenimiento e implementación.</p></article>
+      <article class="card reveal"><span class="card-number">02</span><h3>Redes y seguridad</h3><p>CCNA, VLAN, routing, switching, monitoreo, VPN, acceso remoto seguro, ciberseguridad y Ethical Hacking.</p></article>
+      <article class="card reveal"><span class="card-number">03</span><h3>Calidad y datos</h3><p>QA de software, planificación y ejecución de pruebas, Azure Fundamentals, Power BI, Access y JavaScript.</p></article>
+      <article class="card reveal"><span class="card-number">04</span><h3>Servicio y operaciones</h3><p>Atención de casos, documentación, seguimiento, sistemas HRIS, cumplimiento y mejora continua.</p></article>
+      <article class="card reveal"><span class="card-number">05</span><h3>Formación tecnológica</h3><p>Docencia STEAM, robótica, programación, pensamiento computacional y aprendizaje basado en proyectos.</p></article>
+      <article class="card reveal"><span class="card-number">06</span><h3>Comunicación bilingüe</h3><p>Español nativo e inglés avanzado C1 certificado por el INA, con experiencia regional en América.</p></article>
+    </div></div></section>
+    <section id="experiencia"><div class="wrap"><div class="section-head reveal"><div><span class="kicker">Trayectoria</span><h2>Experiencia profesional</h2></div><p class="section-intro">Una trayectoria multidisciplinaria que integra tecnología, atención de personas, operaciones, calidad y educación.</p></div><div class="timeline">
+      <article class="job reveal"><div class="job-top"><div><h3>Instructor de Robótica e Informática</h3><div class="company">Colegio Ecoturístico del Pacífico</div></div><span class="date">Feb. 2025 — Actualidad</span></div><ul><li>Formación STEAM en robótica y programación mediante aprendizaje basado en proyectos.</li><li>Desarrollo del pensamiento computacional, analítico y creativo del estudiantado.</li></ul></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Técnico de Infraestructura y Soporte TI</h3><div class="company">Inter-Tech Costa Rica</div></div><span class="date">Ago. 2019 — Nov. 2025</span></div><ul><li>Soporte técnico de nivel 1 y 2 para hardware, software y conectividad.</li><li>Administración de servidores, redes empresariales, CCTV y estaciones de trabajo.</li><li>Instalaciones, actualizaciones y mantenimiento preventivo.</li></ul></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Técnico de Monitoreo de Redes y Sistemas</h3><div class="company">STS Security</div></div><span class="date">Ene. 2023 — Nov. 2025</span></div><ul><li>Monitoreo del rendimiento de redes y reducción de tiempos de inactividad.</li><li>Gestión de conexiones VPN, accesos remotos seguros y reportes de optimización.</li></ul></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Especialista del Centro de Recursos para Empleados</h3><div class="company">Amazon</div></div><span class="date">Oct. 2020 — Ago. 2023</span></div><ul><li>Soporte de Recursos Humanos para operaciones de Norte y Sudamérica.</li><li>Gestión de consultas, documentación HRIS, seguimiento de casos y cumplimiento de políticas.</li></ul></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Gerente de Servicio al Cliente y Control de Calidad</h3><div class="company">GAIA Hotel &amp; Reserve</div></div><span class="date">Ene. 2012 — Dic. 2018</span></div><ul><li>Mejora de la calidad del servicio y de la eficiencia operativa.</li><li>Implementación de sistemas de mejora continua y desarrollo del personal.</li></ul></article>
+    </div></div></section>
+    <section id="formacion"><div class="wrap"><div class="section-head reveal"><div><span class="kicker">Preparación</span><h2>Formación y credenciales</h2></div><p class="section-intro">Base académica en sistemas, educación y una actualización técnica continua en redes, seguridad, nube, calidad y datos.</p></div><div class="split">
+      <div class="card reveal"><span class="card-number">EDUCACIÓN</span><div class="education-item"><h3>Maestría Profesional en Ciencias de la Educación</h3><p>Énfasis en Docencia para Ingeniería de Sistemas · <a class="school-link" href="https://uisil.ac.cr/" target="_blank" rel="noopener">UISIL ↗</a> · Plan aprobado; pendiente juramentación y entrega del título · 2026</p></div><div class="education-item"><h3>Bachillerato en Ingeniería de Sistemas</h3><p><a class="school-link" href="https://uisil.ac.cr/" target="_blank" rel="noopener">Universidad Internacional San Isidro Labrador ↗</a> · 2023</p></div><div class="education-item"><h3>Bachiller en Educación Media</h3><p>2011</p></div></div>
+      <div class="card reveal"><span class="card-number">CREDENCIALES Y VERIFICACIÓN</span><div class="cert-list"><span class="cert">Cybersecurity Essentials</span><span class="cert">Ethical Hacking / Red Team</span><span class="cert">CCNAv7 ITN · SRWE · ENSA</span><span class="cert">IT Essentials</span><span class="cert">Power BI</span><span class="cert">Software Tester</span><span class="cert">Frontend · JavaScript</span></div><div class="verify-block"><p class="verify-note">Verificación oficial INA: copie el número de registro con sus guiones, abra el portal oficial y péguelo en el campo de consulta. El sistema mostrará el nombre, servicio, duración, fecha y centro ejecutor registrados.</p><div class="credentials">
+        <div class="credential"><div><strong>Controlador(a) de la Calidad de Software · 561 h</strong><code>2703-03352-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2703-03352-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
+        <div class="credential"><div><strong>Redes de Computadoras (CCNA) · 280 h</strong><code>2701-00990-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2701-00990-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
+        <div class="credential"><div><strong>Ejecutivo(a) en Servicio al Cliente · 192 h</strong><code>2201-02204-2019</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2201-02204-2019">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
+        <div class="credential"><div><strong>Operador(a) de Aplicaciones Ofimáticas · 192 h</strong><code>2701-05827-2018</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2701-05827-2018">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
+        <div class="credential"><div><strong>Bases de Datos Access · 50 h</strong><code>2701-00486-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2701-00486-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
+        <div class="credential"><div><strong>Fundamentos de Azure · 50 h</strong><code>2102-01591-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2102-01591-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
+        <div class="credential"><div><strong>CCNA ENSA · 70 h</strong><code>2702-01354-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2702-01354-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
+        <div class="credential"><div><strong>Inglés Oral Avanzado C1</strong><code>2702-00219-2024</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2702-00219-2024">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
+      </div></div></div>
+    </div></div></section>
+    <section id="contacto"><div class="wrap"><div class="contact-card reveal"><div><span class="kicker">Contacto</span><h2>Construyamos una solución.</h2><p>Quepos, Puntarenas, Costa Rica · Disponible para oportunidades profesionales.</p></div><div class="actions"><a class="btn primary" href="mailto:royazofeifa@gmail.com">royazofeifa@gmail.com</a><a class="btn" href="tel:+50683335665">+506 8333-5665</a><a class="btn" href="https://www.linkedin.com/in/royalexanderazofeifamunoz" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> Roy Alexander Azofeifa Muñoz</span><span>Ingeniería · Tecnología · Servicio</span></div></footer>
+  <script>
+    const root=document.documentElement,themeButton=document.getElementById('themeToggle'),langButton=document.getElementById('langToggle');
+    const savedTheme=localStorage.getItem('cv-theme');if(savedTheme)root.dataset.theme=savedTheme;
+    themeButton.addEventListener('click',()=>{const next=root.dataset.theme==='light'?'dark':'light';root.dataset.theme=next;localStorage.setItem('cv-theme',next)});
+    const languagePairs=[
+      ['Perfil','Profile'],['Experiencia','Experience'],['Formación','Education'],['Contacto','Contact'],
+      ['Disponible para nuevos retos','Open to new opportunities'],
+      ['Ingeniero de Sistemas especializado en infraestructura TI, redes, ciberseguridad, calidad de software y soporte técnico. Conecto tecnología, servicio y mejora continua para resolver problemas reales.','Systems Engineer specializing in IT infrastructure, network operations, cybersecurity, software quality assurance, and technical support. I connect technology, service, and continuous improvement to solve real business problems.'],
+      ['Infraestructura TI','IT Infrastructure'],['Ciberseguridad','Cybersecurity'],['Soporte L1/L2','L1/L2 Support'],['Inglés C1','C1 English'],['Contactarme ↗','Contact me ↗'],['Guardar como PDF','Save resume as PDF'],
+      ['Perfil profesional','Professional profile'],['Visión técnica.','Technical insight.'],['Impacto humano.','Human impact.'],
+      ['Experiencia en entornos presenciales, híbridos y remotos, apoyando operaciones tecnológicas e internacionales. Combino pensamiento analítico, comunicación clara y orientación a resultados.','Experience in on-site, hybrid, and remote environments supporting technology and international operations. I combine analytical thinking, clear communication, and a results-driven approach.'],
+      ['Infraestructura y soporte','Infrastructure & Support'],['Soporte L1/L2, servidores, estaciones de trabajo, hardware, software, CCTV, mantenimiento e implementación.','L1/L2 support, servers, workstations, hardware, software, CCTV, maintenance, and deployment.'],
+      ['Redes y seguridad','Networks & Security'],['CCNA, VLAN, routing, switching, monitoreo, VPN, acceso remoto seguro, ciberseguridad y Ethical Hacking.','CCNA, VLANs, routing, switching, monitoring, VPNs, secure remote access, cybersecurity, and ethical hacking.'],
+      ['Calidad y datos','Quality & Data'],['QA de software, planificación y ejecución de pruebas, Azure Fundamentals, Power BI, Access y JavaScript.','Software QA, test planning and execution, Azure Fundamentals, Power BI, Access, and JavaScript.'],
+      ['Servicio y operaciones','Service & Operations'],['Atención de casos, documentación, seguimiento, sistemas HRIS, cumplimiento y mejora continua.','Case management, documentation, follow-up, HRIS systems, compliance, and continuous improvement.'],
+      ['Formación tecnológica','Technology Education'],['Docencia STEAM, robótica, programación, pensamiento computacional y aprendizaje basado en proyectos.','STEAM education, robotics, programming, computational thinking, and project-based learning.'],
+      ['Comunicación bilingüe','Bilingual Communication'],['Español nativo e inglés avanzado C1 certificado por el INA, con experiencia regional en América.','Native Spanish and INA-certified C1 advanced English, with cross-regional experience in the Americas.'],
+      ['Trayectoria','Career history'],['Experiencia profesional','Professional Experience'],['Una trayectoria multidisciplinaria que integra tecnología, atención de personas, operaciones, calidad y educación.','A multidisciplinary career integrating technology, customer and employee support, operations, quality, and education.'],
+      ['Instructor de Robótica e Informática','Robotics & Computer Science Instructor'],['Feb. 2025 — Actualidad','Feb 2025 — Present'],['Formación STEAM en robótica y programación mediante aprendizaje basado en proyectos.','Delivered STEAM-based robotics and programming instruction through project-based learning.'],['Desarrollo del pensamiento computacional, analítico y creativo del estudiantado.','Developed students’ computational, analytical, and creative-thinking skills.'],
+      ['Técnico de Infraestructura y Soporte TI','IT Infrastructure & Support Technician'],['Ago. 2019 — Nov. 2025','Aug 2019 — Nov 2025'],['Soporte técnico de nivel 1 y 2 para hardware, software y conectividad.','Provided Level 1 and Level 2 support for hardware, software, and connectivity.'],['Administración de servidores, redes empresariales, CCTV y estaciones de trabajo.','Administered servers, enterprise networks, CCTV systems, and workstations.'],['Instalaciones, actualizaciones y mantenimiento preventivo.','Performed installations, upgrades, and preventive maintenance.'],
+      ['Técnico de Monitoreo de Redes y Sistemas','Network & Systems Monitoring Technician'],['Ene. 2023 — Nov. 2025','Jan 2023 — Nov 2025'],['Monitoreo del rendimiento de redes y reducción de tiempos de inactividad.','Monitored network performance and helped minimize downtime.'],['Gestión de conexiones VPN, accesos remotos seguros y reportes de optimización.','Managed VPN connections, secure remote access, and technical optimization reports.'],
+      ['Especialista del Centro de Recursos para Empleados','Employee Resource Center Specialist'],['Oct. 2020 — Ago. 2023','Oct 2020 — Aug 2023'],['Soporte de Recursos Humanos para operaciones de Norte y Sudamérica.','Delivered HR support for North and South American operations.'],['Gestión de consultas, documentación HRIS, seguimiento de casos y cumplimiento de políticas.','Managed inquiries, HRIS documentation, case follow-up, and policy compliance.'],
+      ['Gerente de Servicio al Cliente y Control de Calidad','Customer Service & Quality Control Manager'],['Ene. 2012 — Dic. 2018','Jan 2012 — Dec 2018'],['Mejora de la calidad del servicio y de la eficiencia operativa.','Improved service quality and operational efficiency.'],['Implementación de sistemas de mejora continua y desarrollo del personal.','Implemented continuous-improvement systems and staff development initiatives.'],
+      ['Preparación','Qualifications'],['Formación y credenciales','Education & Credentials'],['Base académica en sistemas, educación y una actualización técnica continua en redes, seguridad, nube, calidad y datos.','Academic foundation in systems engineering and education, supported by continuous technical training in networking, security, cloud, quality, and data.'],
+      ['EDUCACIÓN','EDUCATION'],['Maestría Profesional en Ciencias de la Educación','Professional Master’s Degree in Education Sciences'],['Énfasis en Docencia para Ingeniería de Sistemas ·','Teaching concentration for Systems Engineering ·'],['· Plan aprobado; pendiente juramentación y entrega del título · 2026','· All coursework and degree requirements completed; formal conferral ceremony and diploma pending · 2026'],['Bachillerato en Ingeniería de Sistemas','Bachelor’s Degree in Systems Engineering'],['Universidad Internacional San Isidro Labrador ↗','International University of San Isidro Labrador ↗'],['Bachiller en Educación Media','High School Diploma'],
+      ['CREDENCIALES Y VERIFICACIÓN','CREDENTIALS & VERIFICATION'],['Verificación oficial INA: copie el número de registro con sus guiones, abra el portal oficial y péguelo en el campo de consulta. El sistema mostrará el nombre, servicio, duración, fecha y centro ejecutor registrados.','Official INA verification (Costa Rica): copy the registration number including hyphens, open the government registry, and paste it into the search field. The registry displays the student name, credential, training hours, completion date, and issuing center.'],
+      ['Controlador(a) de la Calidad de Software · 561 h','Software Quality Controller · 561 hours'],['Redes de Computadoras (CCNA) · 280 h','Computer Networking (CCNA) · 280 hours'],['Ejecutivo(a) en Servicio al Cliente · 192 h','Customer Service Executive · 192 hours'],['Operador(a) de Aplicaciones Ofimáticas · 192 h','Office Applications Operator · 192 hours'],['Bases de Datos Access · 50 h','Microsoft Access Databases · 50 hours'],['Fundamentos de Azure · 50 h','Azure Fundamentals · 50 hours'],['CCNA ENSA · 70 h','CCNA ENSA · 70 hours'],['Inglés Oral Avanzado C1','Advanced Spoken English · C1'],['Copiar','Copy'],['Verificar ↗','Verify ↗'],
+      ['Construyamos una solución.','Let’s build a solution.'],['Quepos, Puntarenas, Costa Rica · Disponible para oportunidades profesionales.','Quepos, Puntarenas, Costa Rica · Open to professional opportunities, including remote and international roles.'],['Ingeniería · Tecnología · Servicio','Engineering · Technology · Service']
+    ];
+    const esToEn=new Map(languagePairs),enToEs=new Map(languagePairs.map(([es,en])=>[en,es]));
+    function translatePage(lang){const map=lang==='en'?esToEn:enToEs;const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let node;while(node=walker.nextNode()){if(['SCRIPT','STYLE','CODE'].includes(node.parentElement?.tagName))continue;const raw=node.nodeValue,trimmed=raw.trim();if(map.has(trimmed))node.nodeValue=raw.replace(trimmed,map.get(trimmed))}root.lang=lang;langButton.textContent=lang==='en'?'ES':'EN';document.title=lang==='en'?'Roy Alexander Azofeifa | Systems Engineer Resume':'Roy Alexander Azofeifa | Ingeniero de Sistemas';localStorage.setItem('cv-lang',lang)}
+    langButton.addEventListener('click',()=>translatePage(root.lang==='es'?'en':'es'));
+    if(localStorage.getItem('cv-lang')==='en')translatePage('en');
+    document.querySelectorAll('.copy-code').forEach(button=>button.addEventListener('click',async()=>{const original=button.textContent;try{await navigator.clipboard.writeText(button.dataset.code);button.textContent=root.lang==='en'?'Copied':'Copiado'}catch{button.textContent=button.dataset.code}setTimeout(()=>button.textContent=root.lang==='en'?'Copy':'Copiar',1600)}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el=>reduce?el.classList.add('visible'):observer.observe(el));
+    (()=>{if(reduce)return;const canvas=document.getElementById('constellation'),ctx=canvas.getContext('2d');let points=[],w=0,h=0,dpr=1,pointer={x:-9999,y:-9999};
+      const resize=()=>{dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;canvas.width=w*dpr;canvas.height=h*dpr;canvas.style.width=w+'px';canvas.style.height=h+'px';ctx.setTransform(dpr,0,0,dpr,0,0);const count=Math.min(78,Math.max(34,Math.floor(w*h/22000)));points=Array.from({length:count},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.5+.5,phase:Math.random()*Math.PI*2}))};
+      addEventListener('resize',resize,{passive:true});addEventListener('pointermove',e=>{pointer.x=e.clientX;pointer.y=e.clientY},{passive:true});addEventListener('pointerleave',()=>pointer={x:-9999,y:-9999});resize();
+      const frame=t=>{ctx.clearRect(0,0,w,h);const light=root.dataset.theme==='light';for(const p of points){const dx=p.x-pointer.x,dy=p.y-pointer.y,d=Math.hypot(dx,dy);if(d<150&&d>0){p.vx+=dx/d*.008;p.vy+=dy/d*.008}p.x+=p.vx;p.y+=p.vy;p.vx*=.998;p.vy*=.998;if(p.x<-10)p.x=w+10;if(p.x>w+10)p.x=-10;if(p.y<-10)p.y=h+10;if(p.y>h+10)p.y=-10}
+        for(let i=0;i<points.length;i++)for(let j=i+1;j<points.length;j++){const a=points[i],b=points[j],dist=Math.hypot(a.x-b.x,a.y-b.y);if(dist<145){ctx.strokeStyle=light?`rgba(18,101,145,${(1-dist/145)*.12})`:`rgba(72,214,232,${(1-dist/145)*.13})`;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke()}}
+        points.forEach(p=>{const glow=.65+Math.sin(t*.001+p.phase)*.25;ctx.fillStyle=light?`rgba(38,119,158,${glow*.35})`:`rgba(103,232,183,${glow*.48})`;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill()});requestAnimationFrame(frame)};requestAnimationFrame(frame)})();
+  </script>
 </body>
 </html>
