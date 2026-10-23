@@ -6,7 +6,7 @@ tr=json.loads((b/'assets/translations.json').read_text(encoding='utf8'));embedde
 for e in r.xpath('//*[@data-i18n]'):assert set(tr[e.get('data-i18n')])=={'es','en'};assert e.text==tr[e.get('data-i18n')]['es']
 for url in r.xpath('//@href | //@src'):
     if url.startswith('#'):assert url[1:] in ids,url
-    elif not url.startswith(('http:','https:','mailto:','tel:')):assert (b/url).is_file(),url
+    elif not url.startswith(('http:','https:','mailto:','tel:')):assert (b/url.split('?' )[0]).is_file(),url
 for a in r.xpath('//a[@target="_blank"]'):assert {'noopener','noreferrer'}<=set(a.get('rel','').split())
 assert len(r.xpath('//main//h1'))==1
 assert len(r.xpath('//main//*[contains(@class,"education-primary")]'))==1
@@ -27,3 +27,4 @@ if '--links' in __import__('sys').argv:
         except Exception as e:return url,str(e)
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:
         for result in ex.map(check,urls):print(result)
+
