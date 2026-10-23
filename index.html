@@ -3,145 +3,384 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Currículum profesional de Roy Alexander Azofeifa Muñoz, ingeniero de sistemas especializado en infraestructura TI, redes, ciberseguridad, QA y soporte técnico.">
+  <meta name="description" content="Ingeniero de Sistemas con experiencia en soporte L1/L2, infraestructura y redes. Maestría Profesional en Ciencias de la Educación con énfasis en Docencia.">
   <meta name="theme-color" content="#07111f">
   <title>Roy Alexander Azofeifa | Ingeniero de Sistemas</title>
-  <style>
-    :root{--bg:#07111f;--bg2:#0b192b;--panel:rgba(13,29,48,.84);--card:rgba(18,39,63,.72);--text:#edf7ff;--muted:#9db2c7;--line:rgba(146,202,232,.16);--cyan:#48d6e8;--blue:#5d8cff;--mint:#67e8b7;--shadow:0 24px 80px rgba(0,0,0,.32);--radius:24px}
-    [data-theme="light"]{--bg:#edf5fa;--bg2:#dfeef6;--panel:rgba(255,255,255,.88);--card:rgba(255,255,255,.72);--text:#10243a;--muted:#536a80;--line:rgba(30,89,125,.14);--shadow:0 24px 70px rgba(44,83,110,.15)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 15% 5%,rgba(72,214,232,.13),transparent 27%),linear-gradient(145deg,var(--bg),var(--bg2));line-height:1.65;overflow-x:hidden}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,#000,transparent 88%);z-index:-1}
-    #constellation{position:fixed;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
-    .nav{position:sticky;top:14px;z-index:20;margin-top:14px}.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:11px 14px 11px 20px;border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:0 10px 40px rgba(0,0,0,.14);backdrop-filter:blur(18px)}
-    .brand{display:flex;align-items:center;gap:11px;color:var(--text);font-weight:800;text-decoration:none;letter-spacing:-.02em}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;color:#06121f;background:linear-gradient(135deg,var(--cyan),var(--mint));font-size:.78rem}.nav-links{display:flex;align-items:center;gap:5px}.nav-links a,.icon-btn{border:0;border-radius:11px;padding:9px 12px;background:transparent;color:var(--muted);font:inherit;font-size:.88rem;text-decoration:none;cursor:pointer}.nav-links a:hover,.icon-btn:hover{color:var(--text);background:var(--line)}
-    .hero{min-height:78vh;display:grid;grid-template-columns:1.25fr .75fr;gap:58px;align-items:center;padding:86px 0 60px}.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;padding:7px 12px;border:1px solid rgba(103,232,183,.28);border-radius:999px;color:var(--mint);background:rgba(103,232,183,.07);font-size:.82rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.pulse{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(103,232,183,.6);animation:pulse 2s infinite}@keyframes pulse{70%{box-shadow:0 0 0 9px transparent}}
-    h1{margin:0;font-size:clamp(2.9rem,7vw,6.2rem);line-height:.96;letter-spacing:-.065em}.gradient{background:linear-gradient(110deg,var(--cyan),var(--blue) 55%,var(--mint));background-clip:text;color:transparent}.lead{max-width:750px;margin:24px 0;color:var(--muted);font-size:clamp(1.02rem,1.6vw,1.22rem)}.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}.tag{padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.035);font-size:.82rem;color:var(--muted)}
-    .actions{display:flex;flex-wrap:wrap;gap:11px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border:1px solid var(--line);border-radius:13px;color:var(--text);background:var(--card);text-decoration:none;font-weight:750;cursor:pointer}.btn.primary{border:0;color:#06121f;background:linear-gradient(135deg,var(--cyan),var(--mint));box-shadow:0 12px 32px rgba(72,214,232,.18)}.btn:hover{transform:translateY(-2px)}
-    .portrait-wrap{position:relative;justify-self:center;width:min(325px,64vw);aspect-ratio:1}.portrait-wrap:before,.portrait-wrap:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}.portrait-wrap:before{inset:-18px;background:conic-gradient(from 45deg,var(--cyan),transparent 32%,var(--blue),transparent 67%,var(--mint));animation:spin 15s linear infinite}.portrait-wrap:after{inset:-36px;border:1px solid var(--line)}@keyframes spin{to{transform:rotate(360deg)}}.portrait-frame{position:relative;z-index:1;width:100%;height:100%;overflow:hidden;border:9px solid var(--bg2);border-radius:50%;box-shadow:var(--shadow)}.portrait{width:100%;height:100%;object-fit:cover;object-position:center top;transform:translateY(-4%) scale(1.45);transform-origin:center 18%}
-    section{padding:66px 0;scroll-margin-top:95px}.section-head{display:grid;grid-template-columns:.72fr 1.28fr;gap:30px;margin-bottom:30px}.kicker{color:var(--cyan);font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.section-head h2{margin:5px 0;font-size:clamp(2rem,4vw,3.25rem);line-height:1.04;letter-spacing:-.045em}.section-intro{align-self:end;margin:0;color:var(--muted);max-width:670px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{position:relative;padding:23px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,var(--card),rgba(255,255,255,.025));box-shadow:0 12px 40px rgba(0,0,0,.08);backdrop-filter:blur(12px);overflow:hidden}.card:after{content:"";position:absolute;inset:auto -35% -70% 25%;height:150px;background:radial-gradient(circle,rgba(72,214,232,.12),transparent 68%);pointer-events:none}.card-number{color:var(--cyan);font:700 .82rem ui-monospace,monospace}.card h3{margin:34px 0 8px;font-size:1.18rem}.card p{margin:0;color:var(--muted);font-size:.94rem}
-    .timeline{position:relative;display:grid;gap:15px;margin-left:15px}.timeline:before{content:"";position:absolute;left:7px;top:12px;bottom:12px;width:1px;background:linear-gradient(var(--cyan),var(--blue),transparent)}.job{position:relative;margin-left:31px;padding:22px 24px;border:1px solid var(--line);border-radius:19px;background:var(--card)}.job:before{content:"";position:absolute;left:-32px;top:29px;width:13px;height:13px;border:4px solid var(--bg2);border-radius:50%;background:var(--cyan);box-shadow:0 0 20px rgba(72,214,232,.65)}.job-top{display:flex;justify-content:space-between;gap:15px}.job h3{margin:0;font-size:1.16rem}.company{margin-top:3px;color:var(--cyan);font-weight:700}.date{white-space:nowrap;color:var(--muted);font-size:.85rem}.job ul{margin:12px 0 0;padding-left:19px;color:var(--muted)}
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.education-item{padding:19px 0;border-bottom:1px solid var(--line)}.education-item:last-child{border:0}.education-item h3{margin:0;font-size:1.05rem}.education-item p{margin:4px 0 0;color:var(--muted)}.cert-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.cert{padding:8px 11px;border:1px solid var(--line);border-radius:10px;color:var(--muted);background:rgba(255,255,255,.025);font-size:.84rem}
-    .contact-card{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:36px;border:1px solid rgba(72,214,232,.22);border-radius:30px;background:linear-gradient(125deg,rgba(72,214,232,.1),var(--card) 45%,rgba(93,140,255,.1));box-shadow:var(--shadow)}.contact-card h2{margin:0 0 8px;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.04em}.contact-card p{margin:0;color:var(--muted)}footer{padding:28px 0 45px;color:var(--muted);font-size:.86rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:22px}
-    .verify-block{margin-top:16px;padding-top:17px;border-top:1px solid var(--line)}.verify-note{margin:0 0 13px;color:var(--muted);font-size:.86rem}.credentials{display:grid;gap:9px}.credential{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:11px 12px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.025)}.credential strong{display:block;font-size:.88rem}.credential code{color:var(--cyan);font-size:.78rem}.credential-actions{display:flex;gap:5px}.mini-btn{border:1px solid var(--line);border-radius:8px;padding:6px 8px;color:var(--muted);background:transparent;font:inherit;font-size:.74rem;text-decoration:none;cursor:pointer}.mini-btn:hover{color:var(--text);background:var(--line)}.school-link{color:var(--cyan);text-decoration:none}.school-link:hover{text-decoration:underline}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
-    @media(max-width:900px){.nav-links a{display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:65px}.portrait-wrap{grid-row:1}.lead{margin-inline:auto}.hero-tags,.actions{justify-content:center}.section-head{grid-template-columns:1fr}.section-intro{align-self:auto}.grid{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}.contact-card{grid-template-columns:1fr;text-align:center}.contact-card .actions{justify-content:center}}
-    @media(max-width:590px){.wrap{width:min(100% - 24px,1180px)}.nav{top:8px;margin-top:8px}.brand span:last-child{display:none}.hero{gap:38px;min-height:auto;padding:54px 0 30px}.grid{grid-template-columns:1fr}.job-top{display:block}.date{display:block;margin-top:7px}.job{padding:19px}.section-head{margin-bottom:21px}section{padding:48px 0}.contact-card{padding:25px}.footer-inner{display:block}.credential{grid-template-columns:1fr}.credential-actions{margin-top:4px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
-    .ats-print{display:none}
-    @page{size:Letter;margin:.34in}
-    @media print{#constellation,.nav,main,footer{display:none!important}html,body{width:100%;height:auto;background:#fff!important;color:#111!important}.ats-print{display:block!important;font-family:Arial,Helvetica,sans-serif;font-size:8.25pt;line-height:1.16;color:#111}.ats-lang{display:none}html[lang="es"] .ats-es,html[lang="en"] .ats-en{display:block}.ats-print *{box-sizing:border-box}.ats-print h1{font-size:19pt;line-height:1;margin:0 0 2pt;letter-spacing:0;color:#111}.ats-title{font-size:9.5pt;font-weight:700;margin-bottom:3pt}.ats-contact{font-size:7.8pt;border-bottom:1.2pt solid #111;padding-bottom:4pt;margin-bottom:4pt}.ats-print h2{font-size:9.2pt;line-height:1;margin:4pt 0 2pt;padding-bottom:1pt;border-bottom:.6pt solid #777;text-transform:uppercase;letter-spacing:.04em;color:#111}.ats-print p{margin:0 0 2pt}.ats-skills{margin:0}.ats-job{margin-bottom:2.5pt;break-inside:avoid}.ats-job-head{display:flex;justify-content:space-between;gap:8pt;font-weight:700}.ats-job-meta{font-weight:400}.ats-job ul{margin:1pt 0 0 11pt;padding:0}.ats-job li{margin:0}.ats-education p,.ats-certs p{margin-bottom:1.5pt}.ats-note{font-size:7.2pt;color:#333}.ats-print a{color:#111;text-decoration:none}}
-  </style>
+  <link rel="stylesheet" href="assets/styles.css">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Roy Azofeifa | IT Infrastructure &amp; Support">
+<meta property="og:description" content="Systems engineering, L1/L2 support and network operations. Explore experience, education and resumes in English and Spanish.">
+<meta property="og:url" content="https://royazofeifa.github.io/HojaDeVida/">
+<meta property="og:image" content="https://royazofeifa.github.io/HojaDeVida/roy.jpeg">
+<meta property="og:image:alt" content="Roy Alexander Azofeifa Muñoz">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://royazofeifa.github.io/HojaDeVida/">
 </head>
 <body>
-  <canvas id="constellation" aria-hidden="true"></canvas>
-  <nav class="nav wrap" aria-label="Navegación principal"><div class="nav-inner"><a class="brand" href="#inicio"><span class="brand-mark">RA</span><span>Roy Azofeifa</span></a><div class="nav-links"><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a><button class="icon-btn" id="langToggle" aria-label="Cambiar idioma">EN</button><button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">◐</button></div></div></nav>
-  <main>
-    <header class="hero wrap" id="inicio"><div class="reveal"><div class="eyebrow"><span class="pulse"></span>Disponible para nuevos retos</div><h1>Roy Alexander<br><span class="gradient">Azofeifa Muñoz</span></h1><p class="lead">Ingeniero de Sistemas con experiencia en soporte L1/L2, resolución de problemas técnicos y monitoreo de redes. Experiencia previa en Amazon ERC, seguimiento de casos y orientación en aplicaciones de autoservicio. Formación en JavaScript, pruebas de software y Azure; inglés C1.</p><div class="hero-tags"><span class="tag">Resolución de problemas</span><span class="tag">Formación CCNA</span><span class="tag">Ciberseguridad</span><span class="tag">QA</span><span class="tag">Soporte L1/L2</span><span class="tag">Inglés C1</span></div><div class="actions"><a class="btn primary" href="mailto:royazofeifa@gmail.com">Contactarme ↗</a><a class="btn" href="Roy_Azofeifa_Amazon_Support_Engineer_CV.pdf" download>Descargar CV para Amazon</a><button class="btn" onclick="window.print()">Imprimir CV ATS en PDF</button></div></div><div class="portrait-wrap reveal"><div class="portrait-frame"><img class="portrait" src="roy.jpeg" alt="Fotografía profesional de Roy Alexander Azofeifa Muñoz"></div></div></header>
-    <section id="perfil"><div class="wrap"><div class="section-head reveal"><div><span class="kicker">Perfil profesional</span><h2>Visión técnica.<br>Impacto humano.</h2></div><p class="section-intro">Experiencia en entornos presenciales, híbridos y remotos, apoyando operaciones tecnológicas e internacionales. Combino pensamiento analítico, comunicación clara y orientación a resultados.</p></div><div class="grid">
-      <article class="card reveal"><span class="card-number">01</span><h3>Infraestructura y soporte</h3><p>Soporte L1/L2, servidores, estaciones de trabajo, hardware, software, CCTV, mantenimiento e implementación.</p></article>
-      <article class="card reveal"><span class="card-number">02</span><h3>Redes y seguridad</h3><p>CCNA, VLAN, routing, switching, monitoreo, VPN, acceso remoto seguro, ciberseguridad y Ethical Hacking.</p></article>
-      <article class="card reveal"><span class="card-number">03</span><h3>Calidad y datos</h3><p>QA de software, planificación y ejecución de pruebas, Azure Fundamentals, Power BI, Access y JavaScript.</p></article>
-      <article class="card reveal"><span class="card-number">04</span><h3>Servicio y operaciones</h3><p>Atención de casos, documentación, seguimiento, sistemas HRIS, cumplimiento y mejora continua.</p></article>
-      <article class="card reveal"><span class="card-number">05</span><h3>Formación tecnológica</h3><p>Docencia STEAM, robótica, programación, pensamiento computacional y aprendizaje basado en proyectos.</p></article>
-      <article class="card reveal"><span class="card-number">06</span><h3>Comunicación bilingüe</h3><p>Español nativo e inglés avanzado C1 certificado por el INA, con experiencia regional en América.</p></article>
-    </div></div></section>
-    <section id="experiencia"><div class="wrap"><div class="section-head reveal"><div><span class="kicker">Trayectoria</span><h2>Experiencia profesional</h2></div><p class="section-intro">Una trayectoria multidisciplinaria que integra tecnología, atención de personas, operaciones, calidad y educación.</p></div><div class="timeline">
-      <article class="job reveal"><div class="job-top"><div><h3>Instructor de Robótica e Informática</h3><div class="company">Colegio Ecoturístico del Pacífico</div></div><span class="date">Feb. 2025 — Actualidad</span></div><ul><li>Formación STEAM en robótica y programación mediante aprendizaje basado en proyectos.</li><li>Desarrollo del pensamiento computacional, analítico y creativo del estudiantado.</li></ul></article>
-      <article class="job reveal"><div class="job-top"><div><h3>Técnico de Infraestructura y Soporte TI</h3><div class="company">Inter-Tech Costa Rica</div></div><span class="date">Ago. 2019 — Nov. 2025</span></div><ul><li>Soporte técnico de nivel 1 y 2 para hardware, software y conectividad.</li><li>Administración de servidores, redes empresariales, CCTV y estaciones de trabajo.</li><li>Instalaciones, actualizaciones y mantenimiento preventivo.</li></ul></article>
-      <article class="job reveal"><div class="job-top"><div><h3>Técnico de Monitoreo de Redes y Sistemas</h3><div class="company">STS Security</div></div><span class="date">Ene. 2023 — Nov. 2025</span></div><ul><li>Monitoreo del rendimiento de redes y reducción de tiempos de inactividad.</li><li>Gestión de conexiones VPN, accesos remotos seguros y reportes de optimización.</li></ul></article>
-      <article class="job reveal"><div class="job-top"><div><h3>Especialista del Centro de Recursos para Empleados</h3><div class="company">Amazon</div></div><span class="date">Oct. 2020 — Ago. 2023</span></div><ul><li>Soporte de Recursos Humanos para operaciones de Norte y Sudamérica.</li><li>Gestión de consultas, documentación HRIS, seguimiento de casos y cumplimiento de políticas.</li></ul></article>
-      <article class="job reveal"><div class="job-top"><div><h3>Gerente de Servicio al Cliente y Control de Calidad</h3><div class="company">GAIA Hotel &amp; Reserve</div></div><span class="date">Ene. 2012 — Dic. 2018</span></div><ul><li>Mejora de la calidad del servicio y de la eficiencia operativa.</li><li>Implementación de sistemas de mejora continua y desarrollo del personal.</li></ul></article>
-    </div></div></section>
-    <section id="formacion"><div class="wrap"><div class="section-head reveal"><div><span class="kicker">Preparación</span><h2>Formación y credenciales</h2></div><p class="section-intro">Base académica en sistemas, educación y una actualización técnica continua en redes, seguridad, nube, calidad y datos.</p></div><div class="split">
-      <div class="card reveal"><span class="card-number">EDUCACIÓN</span><div class="education-item"><h3>Maestría Profesional en Ciencias de la Educación</h3><p>Énfasis en Docencia para Ingeniería de Sistemas · <a class="school-link" href="https://uisil.ac.cr/" target="_blank" rel="noopener">UISIL ↗</a> · Título otorgado el 7 de agosto de 2026</p></div><div class="education-item"><h3>Bachillerato en Ingeniería de Sistemas</h3><p><a class="school-link" href="https://uisil.ac.cr/" target="_blank" rel="noopener">Universidad Internacional San Isidro Labrador ↗</a> · 2023</p></div><div class="education-item"><h3>Bachiller en Educación Media</h3><p>2011</p></div></div>
-      <div class="card reveal"><span class="card-number">CREDENCIALES Y VERIFICACIÓN</span><div class="cert-list"><span class="cert">Cybersecurity Essentials</span><span class="cert">Ethical Hacking / Red Team</span><span class="cert">CCNAv7 ITN · SRWE · ENSA</span><span class="cert">IT Essentials</span><span class="cert">Power BI</span><span class="cert">Software Tester</span><span class="cert">Frontend · JavaScript</span></div><div class="verify-block"><p class="verify-note">Verificación oficial INA: copie el número de registro con sus guiones, abra el portal oficial y péguelo en el campo de consulta. El sistema mostrará el nombre, servicio, duración, fecha y centro ejecutor registrados.</p><div class="credentials">
-        <div class="credential"><div><strong>Controlador(a) de la Calidad de Software · 561 h</strong><code>2703-03352-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2703-03352-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
-        <div class="credential"><div><strong>Redes de Computadoras (CCNA) · 280 h</strong><code>2701-00990-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2701-00990-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
-        <div class="credential"><div><strong>Ejecutivo(a) en Servicio al Cliente · 192 h</strong><code>2201-02204-2019</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2201-02204-2019">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
-        <div class="credential"><div><strong>Operador(a) de Aplicaciones Ofimáticas · 192 h</strong><code>2701-05827-2018</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2701-05827-2018">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
-        <div class="credential"><div><strong>Bases de Datos Access · 50 h</strong><code>2701-00486-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2701-00486-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
-        <div class="credential"><div><strong>Fundamentos de Azure · 50 h</strong><code>2102-01591-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2102-01591-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
-        <div class="credential"><div><strong>CCNA ENSA · 70 h</strong><code>2702-01354-2023</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2702-01354-2023">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
-        <div class="credential"><div><strong>Inglés Oral Avanzado C1</strong><code>2702-00219-2024</code></div><div class="credential-actions"><button class="mini-btn copy-code" data-code="2702-00219-2024">Copiar</button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener">Verificar ↗</a></div></div>
-      </div></div></div>
-    </div></div></section>
-    <section id="contacto"><div class="wrap"><div class="contact-card reveal"><div><span class="kicker">Contacto</span><h2>Disponible para aportar experiencia y resultados.</h2><p>Quepos, Puntarenas, Costa Rica · Disponible para oportunidades profesionales.</p></div><div class="actions"><a class="btn primary" href="mailto:royazofeifa@gmail.com">royazofeifa@gmail.com</a><a class="btn" href="tel:+50683335665">+506 8333-5665</a><a class="btn" href="https://www.linkedin.com/in/royalexanderazofeifamunoz" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+  <a class="skip-link" href="#main"><span data-i18n="t0">Saltar al contenido</span></a><nav class="nav wrap" aria-label="Navegación principal"><div class="nav-inner">
+<a class="brand" href="#inicio"><span class="brand-mark">RA</span><span>Roy Azofeifa</span></a><div class="nav-links">
+<a href="#perfil"><span data-i18n="t1">Perfil</span></a><a href="#experiencia"><span data-i18n="t2">Experiencia</span></a><a href="#formacion"><span data-i18n="t3">Formación</span></a><a href="#contacto"><span data-i18n="t4">Contacto</span></a><button class="icon-btn" id="langToggle" aria-label="Cambiar idioma" type="button">EN</button><button class="icon-btn" id="themeToggle" aria-label="Cambiar tema" type="button">◐</button>
+</div>
+</div></nav>
+  <main id="main" tabindex="-1">
+    <header class="hero wrap" id="inicio"><div class="reveal">
+<div class="eyebrow">
+<span class="pulse"></span><span data-i18n="t5">Disponible para nuevos retos</span>
+</div>
+<h1>Roy Alexander<br><span class="gradient">Azofeifa Muñoz</span>
+</h1>
+<p class="hero-specialty"><span data-i18n="t6">Infraestructura TI y soporte técnico</span></p>
+<p class="lead"><span data-i18n="summary">Ingeniero de Sistemas enfocado en soporte L1/L2, infraestructura y redes. Experiencia técnica en Inter-Tech y STS Security, atención regional de casos en Amazon ERC y docencia en informática. Maestría Profesional en Ciencias de la Educación con énfasis en Docencia.</span></p>
+<div class="hero-tags">
+<span class="tag"><span data-i18n="t7">Resolución de problemas</span></span><span class="tag"><span data-i18n="t8">Formación CCNA</span></span><span class="tag"><span data-i18n="t9">Ciberseguridad</span></span><span class="tag">QA</span><span class="tag"><span data-i18n="t10">Soporte L1/L2</span></span><span class="tag"><span data-i18n="t11">Inglés oral C1</span></span>
+</div>
+<div class="actions">
+<a class="btn primary" href="mailto:royazofeifa@gmail.com"><span data-i18n="t12">Contactarme ↗</span></a><a class="btn resume-download" href="Roy_Azofeifa_Resume_EN.pdf" download><span data-i18n="t13">Resume internacional · EN · PDF</span></a><a class="btn" href="Roy_Azofeifa_CV_ES.pdf" download><span data-i18n="t14">CV general · ES · PDF</span></a><button type="button" class="btn" id="printResume"><span data-i18n="t15">Imprimir CV</span></button>
+</div>
+<p class="download-note"><span data-i18n="t16">También disponible:</span> <a href="Roy_Azofeifa_Amazon_Support_Engineer_CV.pdf" download><span data-i18n="t17">Resume de soporte TI · EN · PDF</span></a></p>
+</div>
+<div class="portrait-wrap reveal"><div class="portrait-frame"><img class="portrait" src="assets/roy.webp" alt="Fotografía profesional de Roy Alexander Azofeifa Muñoz" width="480" height="720" fetchpriority="high" decoding="async"></div></div></header>
+    <section id="perfil"><div class="wrap">
+<div class="section-head reveal">
+<div>
+<span class="kicker"><span data-i18n="t18">Perfil profesional</span></span><h2>
+<span data-i18n="t19">Infraestructura confiable.</span><br><span data-i18n="t20">Soporte claro.</span>
+</h2>
+</div>
+<p class="section-intro"><span data-i18n="t21">Mi eje es resolver problemas de infraestructura y conectividad. La atención de casos en Amazon y la docencia refuerzan mi capacidad para documentar, explicar soluciones y acompañar a usuarios.</span></p>
+</div>
+<div class="grid">
+      <article class="card reveal"><span class="card-number">01</span><h3><span data-i18n="t22">Infraestructura y soporte</span></h3>
+<p><span data-i18n="t23">Soporte L1/L2, servidores, estaciones de trabajo, hardware, software, CCTV, mantenimiento e implementación.</span></p>
+<a class="project-link" href="https://intertechcostarica.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="t24">Ver Inter-Tech Costa Rica ↗</span></a></article>
+      <article class="card reveal"><span class="card-number">02</span><h3><span data-i18n="t25">Redes y seguridad</span></h3>
+<p><span data-i18n="t26">Redes empresariales, VLAN, routing, switching, monitoreo y VPN. Formación en ciberseguridad y Ethical Hacking.</span></p></article>
+      <article class="card reveal"><span class="card-number">03</span><h3><span data-i18n="t27">Calidad y datos</span></h3>
+<p><span data-i18n="t28">QA de software, planificación y ejecución de pruebas, Azure Fundamentals, Power BI, Access y JavaScript.</span></p></article>
+      <article class="card reveal"><span class="card-number">04</span><h3><span data-i18n="t29">Servicio y operaciones</span></h3>
+<p><span data-i18n="t30">Atención de casos, documentación, seguimiento, sistemas HRIS, cumplimiento y mejora continua.</span></p></article>
+      <article class="card reveal"><span class="card-number">05</span><h3><span data-i18n="t31">Formación tecnológica</span></h3>
+<p><span data-i18n="t32">Docencia STEAM, robótica, programación, pensamiento computacional y aprendizaje basado en proyectos.</span></p></article>
+      <article class="card reveal"><span class="card-number">06</span><h3><span data-i18n="t33">Comunicación bilingüe</span></h3>
+<p><span data-i18n="t34">Español nativo e inglés oral avanzado C1 (INA). Experiencia de atención regional en Amazon.</span></p></article>
+    </div>
+</div></section>
+    <section id="experiencia"><div class="wrap">
+<div class="section-head reveal">
+<div>
+<span class="kicker"><span data-i18n="t35">Trayectoria</span></span><h2><span data-i18n="t36">Experiencia profesional</span></h2>
+</div>
+<p class="section-intro"><span data-i18n="t37">Experiencia técnica complementada por atención internacional de casos, coordinación operativa y formación de usuarios.</span></p>
+</div>
+<div class="timeline">
+      <article class="job reveal"><div class="job-top">
+<div>
+<h3><span data-i18n="t38">Instructor de Robótica e Informática</span></h3>
+<div class="company">Colegio Ecoturístico del Pacífico</div>
+</div>
+<span class="date"><span data-i18n="t39">Feb. 2025 — Actualidad</span></span>
+</div>
+<ul>
+<li><span data-i18n="t40">Formación STEAM en robótica y programación mediante aprendizaje basado en proyectos.</span></li>
+<li><span data-i18n="t41">Desarrollo del pensamiento computacional, analítico y creativo del estudiantado.</span></li>
+</ul></article>
+      <article class="job reveal"><div class="job-top">
+<div>
+<h3><span data-i18n="t42">Técnico de Monitoreo de Redes y Sistemas</span></h3>
+<div class="company">STS Security</div>
+</div>
+<span class="date"><span data-i18n="t43">Ene. 2023 — Nov. 2025</span></span>
+</div>
+<ul>
+<li><span data-i18n="t44">Monitoreo del rendimiento y disponibilidad de redes para detectar incidencias.</span></li>
+<li><span data-i18n="t45">Gestión de conexiones VPN, accesos remotos seguros y reportes de optimización.</span></li>
+</ul></article>
+      <article class="job reveal"><div class="job-top">
+<div>
+<h3><span data-i18n="t46">Técnico de Infraestructura y Soporte TI</span></h3>
+<div class="company">Inter-Tech Costa Rica</div>
+</div>
+<span class="date"><span data-i18n="t47">Ago. 2019 — Nov. 2025</span></span>
+</div>
+<ul>
+<li><span data-i18n="t48">Soporte técnico de nivel 1 y 2 para hardware, software y conectividad.</span></li>
+<li><span data-i18n="t49">Administración de servidores, redes empresariales, CCTV y estaciones de trabajo.</span></li>
+<li><span data-i18n="t50">Instalaciones, actualizaciones y mantenimiento preventivo.</span></li>
+</ul></article>
+      <article class="job reveal"><div class="job-top">
+<div>
+<h3><span data-i18n="t51">Especialista del Centro de Recursos para Empleados</span></h3>
+<div class="company">Amazon</div>
+</div>
+<span class="date"><span data-i18n="t52">Oct. 2020 — Ago. 2023</span></span>
+</div>
+<ul>
+<li><span data-i18n="t53">Soporte de Recursos Humanos para operaciones de Norte y Sudamérica.</span></li>
+<li><span data-i18n="t54">Gestión de consultas, documentación HRIS, seguimiento de casos y cumplimiento de políticas.</span></li>
+</ul></article>
+      <article class="job reveal"><div class="job-top">
+<div>
+<h3><span data-i18n="t55">Gerente de Servicio al Cliente y Control de Calidad</span></h3>
+<div class="company">GAIA Hotel &amp; Reserve</div>
+</div>
+<span class="date"><span data-i18n="t56">Ene. 2012 — Dic. 2018</span></span>
+</div>
+<ul>
+<li><span data-i18n="t57">Gestión de la calidad del servicio y de las operaciones.</span></li>
+<li><span data-i18n="t58">Implementación de sistemas de mejora continua y desarrollo del personal.</span></li>
+</ul></article>
+    </div>
+</div></section>
+    <section id="formacion"><div class="wrap">
+<div class="section-head reveal">
+<div>
+<span class="kicker"><span data-i18n="t59">Preparación</span></span><h2><span data-i18n="t60">Formación y credenciales</span></h2>
+</div>
+<p class="section-intro"><span data-i18n="t61">Formación universitaria en sistemas y educación. Capacitación técnica en redes, seguridad, nube y calidad de software.</span></p>
+</div>
+<div class="split">
+      <div class="card reveal">
+<span class="card-number"><span data-i18n="t62">EDUCACIÓN</span></span><div class="education-item education-primary">
+<span class="education-label"><span data-i18n="t63">GRADO ACADÉMICO MÁS ALTO</span></span><h3><span data-i18n="t64">MAESTRÍA PROFESIONAL EN CIENCIAS DE LA EDUCACIÓN CON ÉNFASIS EN DOCENCIA</span></h3>
+<p class="degree-translation" lang="en">Professional Master’s Degree in Education Sciences with an Emphasis in Teaching</p>
+<p><a class="school-link" href="https://uisil.ac.cr/" target="_blank" rel="noopener noreferrer"><span data-i18n="t65">Universidad Internacional San Isidro Labrador ↗</span></a> <span data-i18n="t66">· Título otorgado el 7 de agosto de 2026</span></p>
+</div>
+<div class="education-item">
+<h3><span data-i18n="t67">Bachillerato en Ingeniería de Sistemas</span></h3>
+<p><a class="school-link" href="https://uisil.ac.cr/" target="_blank" rel="noopener noreferrer"><span data-i18n="t68">Universidad Internacional San Isidro Labrador ↗</span></a> · 2023</p>
+</div>
+<div class="education-item">
+<h3><span data-i18n="t69">Licenciatura en Ingeniería de Sistemas</span></h3>
+<p><span data-i18n="t70">UISIL · En curso · Tres materias pendientes</span></p>
+</div>
+<div class="education-item">
+<h3><span data-i18n="t71">Bachiller en Educación Media</span></h3>
+<p>2011</p>
+</div>
+</div>
+      <div class="card reveal">
+<span class="card-number"><span data-i18n="t72">FORMACIÓN TÉCNICA Y CREDENCIALES</span></span><div class="cert-list">
+<span class="cert">Cybersecurity Essentials</span><span class="cert">Ethical Hacking / Red Team</span><span class="cert">CCNAv7 ITN · SRWE · ENSA</span><span class="cert">IT Essentials</span><span class="cert">Power BI</span><span class="cert">Software Tester</span><span class="cert">Frontend · JavaScript</span>
+</div>
+<div class="verify-block">
+<p class="verify-note"><span data-i18n="t73">Consulte las credenciales del INA en su portal oficial. Las entradas CCNA corresponden a formación en el currículo de redes.</span></p>
+<div class="credentials">
+        <div class="credential">
+<div>
+<strong><span data-i18n="t74">Controlador(a) de la Calidad de Software · 561 h</span></strong><code>2703-03352-2023</code>
+</div>
+<div class="credential-actions">
+<button class="mini-btn copy-code" data-code="2703-03352-2023" type="button" data-credential="Controlador(a) de la Calidad de Software · 561 h"><span data-i18n="t75">Copiar</span></button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener noreferrer"><span data-i18n="t76">Verificar ↗</span></a>
+</div>
+</div>
+        <div class="credential">
+<div>
+<strong><span data-i18n="t77">Redes de Computadoras (CCNA) · 280 h</span></strong><code>2701-00990-2023</code>
+</div>
+<div class="credential-actions">
+<button class="mini-btn copy-code" data-code="2701-00990-2023" type="button" data-credential="Redes de Computadoras (CCNA) · 280 h"><span data-i18n="t78">Copiar</span></button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener noreferrer"><span data-i18n="t79">Verificar ↗</span></a>
+</div>
+</div>
+        <div class="credential">
+<div>
+<strong><span data-i18n="t80">Ejecutivo(a) en Servicio al Cliente · 192 h</span></strong><code>2201-02204-2019</code>
+</div>
+<div class="credential-actions">
+<button class="mini-btn copy-code" data-code="2201-02204-2019" type="button" data-credential="Ejecutivo(a) en Servicio al Cliente · 192 h"><span data-i18n="t81">Copiar</span></button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener noreferrer"><span data-i18n="t82">Verificar ↗</span></a>
+</div>
+</div>
+        <div class="credential">
+<div>
+<strong><span data-i18n="t83">Operador(a) de Aplicaciones Ofimáticas · 192 h</span></strong><code>2701-05827-2018</code>
+</div>
+<div class="credential-actions">
+<button class="mini-btn copy-code" data-code="2701-05827-2018" type="button" data-credential="Operador(a) de Aplicaciones Ofimáticas · 192 h"><span data-i18n="t84">Copiar</span></button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener noreferrer"><span data-i18n="t85">Verificar ↗</span></a>
+</div>
+</div>
+        <div class="credential">
+<div>
+<strong><span data-i18n="t86">Bases de Datos Access · 50 h</span></strong><code>2701-00486-2023</code>
+</div>
+<div class="credential-actions">
+<button class="mini-btn copy-code" data-code="2701-00486-2023" type="button" data-credential="Bases de Datos Access · 50 h"><span data-i18n="t87">Copiar</span></button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener noreferrer"><span data-i18n="t88">Verificar ↗</span></a>
+</div>
+</div>
+        <div class="credential">
+<div>
+<strong><span data-i18n="t89">Fundamentos de Azure · 50 h</span></strong><code>2102-01591-2023</code>
+</div>
+<div class="credential-actions">
+<button class="mini-btn copy-code" data-code="2102-01591-2023" type="button" data-credential="Fundamentos de Azure · 50 h"><span data-i18n="t90">Copiar</span></button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener noreferrer"><span data-i18n="t91">Verificar ↗</span></a>
+</div>
+</div>
+        <div class="credential">
+<div>
+<strong><span data-i18n="t92">CCNA ENSA · 70 h</span></strong><code>2702-01354-2023</code>
+</div>
+<div class="credential-actions">
+<button class="mini-btn copy-code" data-code="2702-01354-2023" type="button" data-credential="CCNA ENSA · 70 h"><span data-i18n="t93">Copiar</span></button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener noreferrer"><span data-i18n="t94">Verificar ↗</span></a>
+</div>
+</div>
+        <div class="credential">
+<div>
+<strong><span data-i18n="t95">Inglés Oral Avanzado C1</span></strong><code>2702-00219-2024</code>
+</div>
+<div class="credential-actions">
+<button class="mini-btn copy-code" data-code="2702-00219-2024" type="button" data-credential="Inglés Oral Avanzado C1"><span data-i18n="t96">Copiar</span></button><a class="mini-btn" href="https://www.ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx" target="_blank" rel="noopener noreferrer"><span data-i18n="t97">Verificar ↗</span></a>
+</div>
+</div>
+      </div>
+</div>
+</div>
+    </div>
+</div></section>
+    <section id="contacto"><div class="wrap"><div class="contact-card reveal">
+<div>
+<span class="kicker"><span data-i18n="t98">Contacto</span></span><h2><span data-i18n="t99">Conversemos sobre su equipo de tecnología.</span></h2>
+<p><span data-i18n="t100">Quepos, Puntarenas, Costa Rica · Disponible para oportunidades profesionales.</span></p>
+</div>
+<div class="actions">
+<a class="btn primary" href="mailto:royazofeifa@gmail.com">royazofeifa@gmail.com</a><a class="btn" href="tel:+50683335665">+506 8333-5665</a><a class="btn" href="https://www.linkedin.com/in/royalexanderazofeifamunoz" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+</div>
+</div></div></section>
   </main>
-  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> Roy Alexander Azofeifa Muñoz</span><span>Ingeniería · Tecnología · Servicio</span></div></footer>
-  <div class="ats-print" aria-hidden="true">
-    <article class="ats-lang ats-es">
-      <h1>ROY ALEXANDER AZOFEIFA MUÑOZ</h1><div class="ats-title">INGENIERO DE SISTEMAS | INFRAESTRUCTURA TI | REDES | CIBERSEGURIDAD | QA</div><div class="ats-contact">Quepos, Puntarenas, Costa Rica | +506 8333-5665 | royazofeifa@gmail.com | linkedin.com/in/royalexanderazofeifamunoz | royazofeifa.github.io/HojaDeVida</div>
-      <h2>Perfil profesional</h2><p>Ingeniero de Sistemas con experiencia en infraestructura TI, redes empresariales, monitoreo, soporte técnico L1/L2, ciberseguridad, VPN, calidad de software y servicio al cliente. Experiencia en operaciones internacionales, documentación de casos, mejora continua y formación tecnológica. Inglés avanzado C1.</p>
-      <h2>Competencias técnicas</h2><p class="ats-skills">Formación CCNA; VLAN; routing; switching; VPN; servidores; infraestructura TI; soporte L1/L2; hardware; software; CCTV; ciberseguridad; Ethical Hacking; QA; pruebas de software; Azure Fundamentals; Power BI; Access; JavaScript; HRIS; servicio al cliente.</p>
-      <h2>Experiencia profesional</h2>
-      <div class="ats-job"><div class="ats-job-head"><span>Instructor de Robótica e Informática - Colegio Ecoturístico del Pacífico</span><span class="ats-job-meta">Feb. 2025 - Actualidad</span></div><ul><li>Imparte robótica y programación STEAM mediante proyectos; desarrolla pensamiento computacional y analítico.</li></ul></div>
-      <div class="ats-job"><div class="ats-job-head"><span>Técnico de Infraestructura y Soporte TI - Inter-Tech Costa Rica</span><span class="ats-job-meta">Ago. 2019 - Nov. 2025</span></div><ul><li>Soporte L1/L2; administración de servidores, redes, CCTV y estaciones; instalaciones y mantenimiento preventivo.</li></ul></div>
-      <div class="ats-job"><div class="ats-job-head"><span>Técnico de Monitoreo de Redes y Sistemas - STS Security</span><span class="ats-job-meta">Ene. 2023 - Nov. 2025</span></div><ul><li>Monitoreo de rendimiento y disponibilidad; gestión de VPN, accesos remotos y reportes de optimización.</li></ul></div>
-      <div class="ats-job"><div class="ats-job-head"><span>Especialista del Centro de Recursos para Empleados - Amazon</span><span class="ats-job-meta">Oct. 2020 - Ago. 2023</span></div><ul><li>Soporte de RR. HH. para Norte y Sudamérica; HRIS, documentación, casos y cumplimiento de políticas.</li></ul></div>
-      <div class="ats-job"><div class="ats-job-head"><span>Gerente de Servicio al Cliente y Control de Calidad - GAIA Hotel &amp; Reserve</span><span class="ats-job-meta">Ene. 2012 - Dic. 2018</span></div><ul><li>Gestión de calidad, eficiencia operativa, mejora continua y desarrollo del personal.</li></ul></div>
-      <h2>Formación académica</h2><div class="ats-education"><p><strong>Maestría Profesional en Ciencias de la Educación, énfasis en Docencia para Ingeniería de Sistemas</strong> - UISIL, título otorgado en agosto de 2026.</p><p><strong>Bachillerato en Ingeniería de Sistemas</strong> - UISIL, 2023. | <strong>Bachiller en Educación Media</strong>, 2011.</p></div>
-      <h2>Certificaciones</h2><div class="ats-certs"><p><strong>INA:</strong> Calidad de Software, 561 h (2703-03352-2023); Redes CCNA, 280 h (2701-00990-2023); Servicio al Cliente, 192 h (2201-02204-2019); Ofimática, 192 h (2701-05827-2018); Access, 50 h (2701-00486-2023); Azure, 50 h (2102-01591-2023); CCNA ENSA, 70 h (2702-01354-2023); Inglés C1 (2702-00219-2024).</p><p><strong>Adicionales:</strong> CCNAv7 ITN/SRWE/ENSA; Cybersecurity Essentials; Ethical Hacking/Red Team; IT Essentials; Power BI; Software Tester; Frontend y JavaScript.</p></div><p class="ats-note">Credenciales INA verificables en: ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx</p>
-    </article>
-    <article class="ats-lang ats-en">
-      <h1>ROY ALEXANDER AZOFEIFA MUÑOZ</h1><div class="ats-title">SYSTEMS ENGINEER | IT INFRASTRUCTURE | NETWORK OPERATIONS | CYBERSECURITY | SOFTWARE QA</div><div class="ats-contact">Quepos, Puntarenas, Costa Rica | +506 8333-5665 | royazofeifa@gmail.com | linkedin.com/in/royalexanderazofeifamunoz | royazofeifa.github.io/HojaDeVida</div>
-      <h2>Professional Summary</h2><p>Systems Engineer with experience in L1/L2 technical support, server and network administration, and performance monitoring. Former Amazon Employee Resource Center specialist supporting North and South American operations through case follow-up, self-service application guidance, and policy compliance. Trained in JavaScript, software testing, and Azure fundamentals, with INA-certified C1 English and a focus on troubleshooting and customer service.</p>
-      <h2>Technical Skills</h2><p class="ats-skills">CCNA curriculum; VLANs; routing; switching; VPNs; servers; IT infrastructure; L1/L2 support; hardware; software; CCTV; cybersecurity; ethical hacking; software QA and testing; Azure Fundamentals; Power BI; Access; JavaScript; HRIS; customer service.</p>
-      <h2>Professional Experience</h2>
-      <div class="ats-job"><div class="ats-job-head"><span>Robotics &amp; Computer Science Instructor - Colegio Ecoturístico del Pacífico</span><span class="ats-job-meta">Feb 2025 - Present</span></div><ul><li>Deliver STEAM robotics and programming instruction through projects; develop computational and analytical skills.</li></ul></div>
-      <div class="ats-job"><div class="ats-job-head"><span>IT Infrastructure &amp; Support Technician - Inter-Tech Costa Rica</span><span class="ats-job-meta">Aug 2019 - Nov 2025</span></div><ul><li>Provided L1/L2 support; administered servers, networks, CCTV, and workstations; performed installations and maintenance.</li></ul></div>
-      <div class="ats-job"><div class="ats-job-head"><span>Network &amp; Systems Monitoring Technician - STS Security</span><span class="ats-job-meta">Jan 2023 - Nov 2025</span></div><ul><li>Monitored performance and availability; managed VPNs, secure remote access, and optimization reports.</li></ul></div>
-      <div class="ats-job"><div class="ats-job-head"><span>Employee Resource Center Specialist - Amazon</span><span class="ats-job-meta">Oct 2020 - Aug 2023</span></div><ul><li>Supported North and South American HR operations; managed HRIS documentation, cases, and policy compliance.</li></ul></div>
-      <div class="ats-job"><div class="ats-job-head"><span>Customer Service &amp; Quality Control Manager - GAIA Hotel &amp; Reserve</span><span class="ats-job-meta">Jan 2012 - Dec 2018</span></div><ul><li>Managed service quality, operational efficiency, continuous improvement, and staff development.</li></ul></div>
-      <h2>Education</h2><div class="ats-education"><p><strong>Professional Master's Degree in Education Sciences, Teaching Concentration for Systems Engineering</strong> - UISIL; degree awarded August 2026.</p><p><strong>Bachelor's Degree in Systems Engineering</strong> - UISIL, 2023. | <strong>High School Diploma</strong>, 2011.</p></div>
-      <h2>Certifications</h2><div class="ats-certs"><p><strong>INA:</strong> Software Quality Controller, 561 hours (2703-03352-2023); Computer Networking/CCNA, 280 hours (2701-00990-2023); Customer Service, 192 hours (2201-02204-2019); Office Applications, 192 hours (2701-05827-2018); Access, 50 hours (2701-00486-2023); Azure, 50 hours (2102-01591-2023); CCNA ENSA, 70 hours (2702-01354-2023); C1 English (2702-00219-2024).</p><p><strong>Additional:</strong> CCNAv7 ITN/SRWE/ENSA; Cybersecurity Essentials; Ethical Hacking/Red Team; IT Essentials; Power BI; Software Tester; Frontend and JavaScript.</p></div><p class="ats-note">INA credentials can be verified at: ina.ac.cr/inavirtual/SitePages/Certificados_Digitales.aspx</p>
-    </article>
-  </div>
-  <script>
-    const root=document.documentElement,themeButton=document.getElementById('themeToggle'),langButton=document.getElementById('langToggle');
-    const savedTheme=localStorage.getItem('cv-theme');if(savedTheme)root.dataset.theme=savedTheme;
-    themeButton.addEventListener('click',()=>{const next=root.dataset.theme==='light'?'dark':'light';root.dataset.theme=next;localStorage.setItem('cv-theme',next)});
-    const languagePairs=[
-      ['Formación CCNA','CCNA Training'],['Descargar CV para Amazon','Download Amazon Resume'],['Perfil','Profile'],['Experiencia','Experience'],['Formación','Education'],['Contacto','Contact'],
-      ['Disponible para nuevos retos','Open to new opportunities'],
-      ['Ingeniero de Sistemas con experiencia en soporte L1/L2, resolución de problemas técnicos y monitoreo de redes. Experiencia previa en Amazon ERC, seguimiento de casos y orientación en aplicaciones de autoservicio. Formación en JavaScript, pruebas de software y Azure; inglés C1.','Systems Engineer experienced in L1/L2 support, technical troubleshooting, and network monitoring. Former Amazon ERC specialist with experience in case follow-up and self-service application guidance. Trained in JavaScript, software testing, and Azure; C1 English.'],
-      ['Resolución de problemas','Troubleshooting'],['Ciberseguridad','Cybersecurity'],['Soporte L1/L2','L1/L2 Support'],['Inglés C1','C1 English'],['Contactarme ↗','Contact me ↗'],['Imprimir CV ATS en PDF','Print ATS resume to PDF'],
-      ['Perfil profesional','Professional profile'],['Visión técnica.','Technical insight.'],['Impacto humano.','Human impact.'],
-      ['Experiencia en entornos presenciales, híbridos y remotos, apoyando operaciones tecnológicas e internacionales. Combino pensamiento analítico, comunicación clara y orientación a resultados.','Experience in on-site, hybrid, and remote environments supporting technology and international operations. I combine analytical thinking, clear communication, and a results-driven approach.'],
-      ['Infraestructura y soporte','Infrastructure & Support'],['Soporte L1/L2, servidores, estaciones de trabajo, hardware, software, CCTV, mantenimiento e implementación.','L1/L2 support, servers, workstations, hardware, software, CCTV, maintenance, and deployment.'],
-      ['Redes y seguridad','Networks & Security'],['CCNA, VLAN, routing, switching, monitoreo, VPN, acceso remoto seguro, ciberseguridad y Ethical Hacking.','CCNA, VLANs, routing, switching, monitoring, VPNs, secure remote access, cybersecurity, and ethical hacking.'],
-      ['Calidad y datos','Quality & Data'],['QA de software, planificación y ejecución de pruebas, Azure Fundamentals, Power BI, Access y JavaScript.','Software QA, test planning and execution, Azure Fundamentals, Power BI, Access, and JavaScript.'],
-      ['Servicio y operaciones','Service & Operations'],['Atención de casos, documentación, seguimiento, sistemas HRIS, cumplimiento y mejora continua.','Case management, documentation, follow-up, HRIS systems, compliance, and continuous improvement.'],
-      ['Formación tecnológica','Technology Education'],['Docencia STEAM, robótica, programación, pensamiento computacional y aprendizaje basado en proyectos.','STEAM education, robotics, programming, computational thinking, and project-based learning.'],
-      ['Comunicación bilingüe','Bilingual Communication'],['Español nativo e inglés avanzado C1 certificado por el INA, con experiencia regional en América.','Native Spanish and INA-certified C1 advanced English, with cross-regional experience in the Americas.'],
-      ['Trayectoria','Career history'],['Experiencia profesional','Professional Experience'],['Una trayectoria multidisciplinaria que integra tecnología, atención de personas, operaciones, calidad y educación.','A multidisciplinary career integrating technology, customer and employee support, operations, quality, and education.'],
-      ['Instructor de Robótica e Informática','Robotics & Computer Science Instructor'],['Feb. 2025 — Actualidad','Feb 2025 — Present'],['Formación STEAM en robótica y programación mediante aprendizaje basado en proyectos.','Delivered STEAM-based robotics and programming instruction through project-based learning.'],['Desarrollo del pensamiento computacional, analítico y creativo del estudiantado.','Developed students’ computational, analytical, and creative-thinking skills.'],
-      ['Técnico de Infraestructura y Soporte TI','IT Infrastructure & Support Technician'],['Ago. 2019 — Nov. 2025','Aug 2019 — Nov 2025'],['Soporte técnico de nivel 1 y 2 para hardware, software y conectividad.','Provided Level 1 and Level 2 support for hardware, software, and connectivity.'],['Administración de servidores, redes empresariales, CCTV y estaciones de trabajo.','Administered servers, enterprise networks, CCTV systems, and workstations.'],['Instalaciones, actualizaciones y mantenimiento preventivo.','Performed installations, upgrades, and preventive maintenance.'],
-      ['Técnico de Monitoreo de Redes y Sistemas','Network & Systems Monitoring Technician'],['Ene. 2023 — Nov. 2025','Jan 2023 — Nov 2025'],['Monitoreo del rendimiento de redes y reducción de tiempos de inactividad.','Monitored network performance and helped minimize downtime.'],['Gestión de conexiones VPN, accesos remotos seguros y reportes de optimización.','Managed VPN connections, secure remote access, and technical optimization reports.'],
-      ['Especialista del Centro de Recursos para Empleados','Employee Resource Center Specialist'],['Oct. 2020 — Ago. 2023','Oct 2020 — Aug 2023'],['Soporte de Recursos Humanos para operaciones de Norte y Sudamérica.','Delivered HR support for North and South American operations.'],['Gestión de consultas, documentación HRIS, seguimiento de casos y cumplimiento de políticas.','Managed inquiries, HRIS documentation, case follow-up, and policy compliance.'],
-      ['Gerente de Servicio al Cliente y Control de Calidad','Customer Service & Quality Control Manager'],['Ene. 2012 — Dic. 2018','Jan 2012 — Dec 2018'],['Mejora de la calidad del servicio y de la eficiencia operativa.','Improved service quality and operational efficiency.'],['Implementación de sistemas de mejora continua y desarrollo del personal.','Implemented continuous-improvement systems and staff development initiatives.'],
-      ['Preparación','Qualifications'],['Formación y credenciales','Education & Credentials'],['Base académica en sistemas, educación y una actualización técnica continua en redes, seguridad, nube, calidad y datos.','Academic foundation in systems engineering and education, supported by continuous technical training in networking, security, cloud, quality, and data.'],
-      ['EDUCACIÓN','EDUCATION'],['Maestría Profesional en Ciencias de la Educación','Professional Master’s Degree in Education Sciences'],['Énfasis en Docencia para Ingeniería de Sistemas ·','Teaching concentration for Systems Engineering ·'],['· Título otorgado el 7 de agosto de 2026','· Degree awarded August 7, 2026'],['Bachillerato en Ingeniería de Sistemas','Bachelor’s Degree in Systems Engineering'],['Universidad Internacional San Isidro Labrador ↗','International University of San Isidro Labrador ↗'],['Bachiller en Educación Media','High School Diploma'],
-      ['CREDENCIALES Y VERIFICACIÓN','CREDENTIALS & VERIFICATION'],['Verificación oficial INA: copie el número de registro con sus guiones, abra el portal oficial y péguelo en el campo de consulta. El sistema mostrará el nombre, servicio, duración, fecha y centro ejecutor registrados.','Official INA verification (Costa Rica): copy the registration number including hyphens, open the government registry, and paste it into the search field. The registry displays the student name, credential, training hours, completion date, and issuing center.'],
-      ['Controlador(a) de la Calidad de Software · 561 h','Software Quality Controller · 561 hours'],['Redes de Computadoras (CCNA) · 280 h','Computer Networking (CCNA) · 280 hours'],['Ejecutivo(a) en Servicio al Cliente · 192 h','Customer Service Executive · 192 hours'],['Operador(a) de Aplicaciones Ofimáticas · 192 h','Office Applications Operator · 192 hours'],['Bases de Datos Access · 50 h','Microsoft Access Databases · 50 hours'],['Fundamentos de Azure · 50 h','Azure Fundamentals · 50 hours'],['CCNA ENSA · 70 h','CCNA ENSA · 70 hours'],['Inglés Oral Avanzado C1','Advanced Spoken English · C1'],['Copiar','Copy'],['Verificar ↗','Verify ↗'],
-      ['Disponible para aportar experiencia y resultados.','Ready to contribute experience and deliver results.'],['Quepos, Puntarenas, Costa Rica · Disponible para oportunidades profesionales.','Quepos, Puntarenas, Costa Rica · Open to professional opportunities, including remote and international roles.'],['Ingeniería · Tecnología · Servicio','Engineering · Technology · Service']
-    ];
-    const esToEn=new Map(languagePairs),enToEs=new Map(languagePairs.map(([es,en])=>[en,es]));
-    function translatePage(lang){const map=lang==='en'?esToEn:enToEs;const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let node;while(node=walker.nextNode()){if(['SCRIPT','STYLE','CODE'].includes(node.parentElement?.tagName))continue;const raw=node.nodeValue,trimmed=raw.trim();if(map.has(trimmed))node.nodeValue=raw.replace(trimmed,map.get(trimmed))}root.lang=lang;langButton.textContent=lang==='en'?'ES':'EN';document.title=lang==='en'?'Roy Alexander Azofeifa | Systems Engineer Resume':'Roy Alexander Azofeifa | Ingeniero de Sistemas';localStorage.setItem('cv-lang',lang)}
-    langButton.addEventListener('click',()=>translatePage(root.lang==='es'?'en':'es'));
-    const requestedLanguage=new URLSearchParams(window.location.search).get('lang');
-    if(requestedLanguage==='en'||requestedLanguage==='es')translatePage(requestedLanguage);
-    else if(localStorage.getItem('cv-lang')==='en')translatePage('en');
-    document.querySelectorAll('.copy-code').forEach(button=>button.addEventListener('click',async()=>{const original=button.textContent;try{await navigator.clipboard.writeText(button.dataset.code);button.textContent=root.lang==='en'?'Copied':'Copiado'}catch{button.textContent=button.dataset.code}setTimeout(()=>button.textContent=root.lang==='en'?'Copy':'Copiar',1600)}));
-    document.getElementById('year').textContent=new Date().getFullYear();
-    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.1});
-    document.querySelectorAll('.reveal').forEach(el=>reduce?el.classList.add('visible'):observer.observe(el));
-    (()=>{if(reduce)return;const canvas=document.getElementById('constellation'),ctx=canvas.getContext('2d');let points=[],w=0,h=0,dpr=1,pointer={x:-9999,y:-9999};
-      const resize=()=>{dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;canvas.width=w*dpr;canvas.height=h*dpr;canvas.style.width=w+'px';canvas.style.height=h+'px';ctx.setTransform(dpr,0,0,dpr,0,0);const count=Math.min(78,Math.max(34,Math.floor(w*h/22000)));points=Array.from({length:count},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.5+.5,phase:Math.random()*Math.PI*2}))};
-      addEventListener('resize',resize,{passive:true});addEventListener('pointermove',e=>{pointer.x=e.clientX;pointer.y=e.clientY},{passive:true});addEventListener('pointerleave',()=>pointer={x:-9999,y:-9999});resize();
-      const frame=t=>{ctx.clearRect(0,0,w,h);const light=root.dataset.theme==='light';for(const p of points){const dx=p.x-pointer.x,dy=p.y-pointer.y,d=Math.hypot(dx,dy);if(d<150&&d>0){p.vx+=dx/d*.008;p.vy+=dy/d*.008}p.x+=p.vx;p.y+=p.vy;p.vx*=.998;p.vy*=.998;if(p.x<-10)p.x=w+10;if(p.x>w+10)p.x=-10;if(p.y<-10)p.y=h+10;if(p.y>h+10)p.y=-10}
-        for(let i=0;i<points.length;i++)for(let j=i+1;j<points.length;j++){const a=points[i],b=points[j],dist=Math.hypot(a.x-b.x,a.y-b.y);if(dist<145){ctx.strokeStyle=light?`rgba(18,101,145,${(1-dist/145)*.12})`:`rgba(72,214,232,${(1-dist/145)*.13})`;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke()}}
-        points.forEach(p=>{const glow=.65+Math.sin(t*.001+p.phase)*.25;ctx.fillStyle=light?`rgba(38,119,158,${glow*.35})`:`rgba(103,232,183,${glow*.48})`;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill()});requestAnimationFrame(frame)};requestAnimationFrame(frame)})();
-  </script>
+  <footer><div class="wrap footer-inner">
+<span>© <span id="year"></span> Roy Alexander Azofeifa Muñoz</span><span><span data-i18n="t101">Ingeniería · Tecnología · Servicio</span></span>
+</div></footer>
+  <p class="status wrap" id="copyStatus" role="status" aria-live="polite"></p>
+<div class="ats-print">
+<article class="ats-lang ats-es" lang="es"><div class="resume-page">
+<h1>Roy Alexander Azofeifa Muñoz</h1>
+<p class="ats-title">Ingeniero de Sistemas | Infraestructura TI y soporte técnico</p>
+<p class="ats-contact">Quepos, Puntarenas, Costa Rica | +506 8333-5665 | royazofeifa@gmail.com | linkedin.com/in/royalexanderazofeifamunoz | royazofeifa.github.io/HojaDeVida/</p>
+<h2>Perfil profesional</h2>
+<p>Ingeniero de Sistemas enfocado en soporte L1/L2, infraestructura y redes. Experiencia técnica en Inter-Tech y STS Security, atención regional de casos en Amazon ERC y docencia en informática. Maestría Profesional en Ciencias de la Educación con énfasis en Docencia.</p>
+<h2>Competencias técnicas</h2>
+<p>Soporte e infraestructura: Diagnóstico de hardware, software y conectividad; soporte L1/L2; servidores, estaciones de trabajo, CCTV e instalaciones; mantenimiento preventivo.</p>
+<p>Redes: VLAN, routing, switching, VPN, acceso remoto y monitoreo de rendimiento y disponibilidad.</p>
+<p>Formación técnica: Currículo CCNA; fundamentos de ciberseguridad y Azure; planificación y ejecución de pruebas de software; Access, Power BI y JavaScript.</p>
+<p>Servicio y comunicación: Documentación y seguimiento de casos, HRIS, atención regional, formación de usuarios y coordinación operativa.</p>
+<h2>Experiencia profesional</h2>
+<div class="ats-job">
+<h3>Instructor de Robótica e Informática | Colegio Ecoturístico del Pacífico</h3>
+<p>Feb. 2025 — Actualidad</p>
+<ul>
+<li>Formación STEAM en robótica y programación mediante aprendizaje basado en proyectos.</li>
+<li>Desarrollo del pensamiento computacional, analítico y creativo del estudiantado.</li>
+</ul>
+</div>
+<div class="ats-job">
+<h3>Técnico de Monitoreo de Redes y Sistemas | STS Security</h3>
+<p>Ene. 2023 — Nov. 2025</p>
+<ul>
+<li>Monitoreo del rendimiento y disponibilidad de redes para detectar incidencias.</li>
+<li>Gestión de conexiones VPN, accesos remotos seguros y reportes de optimización.</li>
+</ul>
+</div>
+<div class="ats-job">
+<h3>Técnico de Infraestructura y Soporte TI | Inter-Tech Costa Rica</h3>
+<p>Ago. 2019 — Nov. 2025</p>
+<ul>
+<li>Soporte técnico de nivel 1 y 2 para hardware, software y conectividad.</li>
+<li>Administración de servidores, redes empresariales, CCTV y estaciones de trabajo.</li>
+<li>Instalaciones, actualizaciones y mantenimiento preventivo.</li>
+</ul>
+</div>
+</div>
+<div class="resume-page">
+<h2>Experiencia profesional · continuación</h2>
+<div class="ats-job">
+<h3>Especialista del Centro de Recursos para Empleados | Amazon</h3>
+<p>Oct. 2020 — Ago. 2023</p>
+<ul>
+<li>Soporte de Recursos Humanos para operaciones de Norte y Sudamérica.</li>
+<li>Gestión de consultas, documentación HRIS, seguimiento de casos y cumplimiento de políticas.</li>
+</ul>
+</div>
+<div class="ats-job">
+<h3>Gerente de Servicio al Cliente y Control de Calidad | GAIA Hotel &amp; Reserve</h3>
+<p>Ene. 2012 — Dic. 2018</p>
+<ul>
+<li>Gestión de la calidad del servicio y de las operaciones.</li>
+<li>Implementación de sistemas de mejora continua y desarrollo del personal.</li>
+</ul>
+</div>
+<h2>Formación académica</h2>
+<p>MAESTRÍA PROFESIONAL EN CIENCIAS DE LA EDUCACIÓN CON ÉNFASIS EN DOCENCIA | Universidad Internacional San Isidro Labrador (UISIL) | 7 de agosto de 2026</p>
+<p>Bachillerato en Ingeniería de Sistemas | Universidad Internacional San Isidro Labrador (UISIL) | 2023</p>
+<p>Licenciatura en Ingeniería de Sistemas | UISIL | En curso; tres materias pendientes</p>
+<h2>Formación técnica seleccionada</h2>
+<p>INA: Controlador(a) de la Calidad de Software, 561 h (2023); Redes de Computadoras, currículo CCNA, 280 h (2023); Fundamentos de Azure, 50 h (2023); Bases de Datos Access, 50 h (2023).</p>
+<p>Cisco Networking Academy: CCNAv7 ITN, SRWE y ENSA; IT Essentials; Cybersecurity Essentials. Cursos de formación técnica.</p>
+<h2>Idiomas</h2>
+<p>Español: nativo. Inglés oral: avanzado C1, INA (2024).</p>
+</div></article><article class="ats-lang ats-en" lang="en"><div class="resume-page">
+<h1>Roy Alexander Azofeifa Muñoz</h1>
+<p class="ats-title">Systems Engineer | IT Infrastructure &amp; Technical Support</p>
+<p class="ats-contact">Quepos, Puntarenas, Costa Rica | +506 8333-5665 | royazofeifa@gmail.com | linkedin.com/in/royalexanderazofeifamunoz | royazofeifa.github.io/HojaDeVida/</p>
+<h2>Professional Summary</h2>
+<p>Systems Engineer focused on L1/L2 support, IT infrastructure and networks. Technical experience at Inter-Tech and STS Security, regional case management at Amazon ERC, and computer science instruction. Holds a professional master’s degree in education sciences with an emphasis in teaching.</p>
+<h2>Core Competencies &amp; Technical Skills</h2>
+<p>Support &amp; infrastructure: Hardware, software and connectivity troubleshooting; L1/L2 support; servers, workstations, CCTV and deployments; preventive maintenance.</p>
+<p>Networks: VLANs, routing, switching, VPNs, remote access, and network performance and availability monitoring.</p>
+<p>Technical training: CCNA curriculum; cybersecurity and Azure fundamentals; software test planning and execution; Access, Power BI and JavaScript.</p>
+<p>Service &amp; communication: Case documentation and follow-up, HRIS, regional support, user education and operational coordination.</p>
+<h2>Professional Experience</h2>
+<div class="ats-job">
+<h3>Robotics &amp; Computer Science Instructor | Colegio Ecoturístico del Pacífico</h3>
+<p>Feb 2025 — Present</p>
+<ul>
+<li>Teach STEAM-based robotics and programming through project-based learning.</li>
+<li>Develop students’ computational, analytical, and creative-thinking skills.</li>
+</ul>
+</div>
+<div class="ats-job">
+<h3>Network &amp; Systems Monitoring Technician | STS Security</h3>
+<p>Jan 2023 — Nov 2025</p>
+<ul>
+<li>Monitored network performance and availability to identify incidents.</li>
+<li>Managed VPN connections, secure remote access, and technical optimization reports.</li>
+</ul>
+</div>
+<div class="ats-job">
+<h3>IT Infrastructure &amp; Support Technician | Inter-Tech Costa Rica</h3>
+<p>Aug 2019 — Nov 2025</p>
+<ul>
+<li>Provided Level 1 and Level 2 support for hardware, software, and connectivity.</li>
+<li>Administered servers, enterprise networks, CCTV systems, and workstations.</li>
+<li>Performed installations, upgrades, and preventive maintenance.</li>
+</ul>
+</div>
+</div>
+<div class="resume-page">
+<h2>Professional Experience · continued</h2>
+<div class="ats-job">
+<h3>Employee Resource Center Specialist | Amazon</h3>
+<p>Oct 2020 — Aug 2023</p>
+<ul>
+<li>Delivered HR support for North and South American operations.</li>
+<li>Managed inquiries, HRIS documentation, case follow-up, and policy compliance.</li>
+</ul>
+</div>
+<div class="ats-job">
+<h3>Customer Service &amp; Quality Control Manager | GAIA Hotel &amp; Reserve</h3>
+<p>Jan 2012 — Dec 2018</p>
+<ul>
+<li>Managed service quality and operations.</li>
+<li>Implemented continuous-improvement systems and staff development initiatives.</li>
+</ul>
+</div>
+<h2>Education</h2>
+<p>MAESTRÍA PROFESIONAL EN CIENCIAS DE LA EDUCACIÓN CON ÉNFASIS EN DOCENCIA | Professional Master’s Degree in Education Sciences with an Emphasis in Teaching | Universidad Internacional San Isidro Labrador (UISIL) | August 7, 2026</p>
+<p>Bachelor’s Degree in Systems Engineering | Universidad Internacional San Isidro Labrador (UISIL) | 2023</p>
+<p>Licenciatura en Ingeniería de Sistemas | UISIL | In progress; three courses remaining</p>
+<h2>Selected Technical Training</h2>
+<p>INA: Software Quality Controller, 561 hours (2023); Computer Networking, CCNA curriculum, 280 hours (2023); Azure Fundamentals, 50 hours (2023); Microsoft Access Databases, 50 hours (2023).</p>
+<p>Cisco Networking Academy coursework: CCNAv7 ITN, SRWE and ENSA; IT Essentials; Cybersecurity Essentials.</p>
+<h2>Languages</h2>
+<p>Spanish: native. Spoken English: advanced C1, INA (2024).</p>
+</div></article>
+</div>
+<script id="translations" type="application/json">{"t0": {"es": "Saltar al contenido", "en": "Skip to content"}, "t1": {"es": "Perfil", "en": "Profile"}, "t2": {"es": "Experiencia", "en": "Experience"}, "t3": {"es": "Formación", "en": "Education"}, "t4": {"es": "Contacto", "en": "Contact"}, "t5": {"es": "Disponible para nuevos retos", "en": "Open to new opportunities"}, "t6": {"es": "Infraestructura TI y soporte técnico", "en": "IT Infrastructure & Technical Support"}, "t7": {"es": "Resolución de problemas", "en": "Troubleshooting"}, "t8": {"es": "Formación CCNA", "en": "CCNA Training"}, "t9": {"es": "Ciberseguridad", "en": "Cybersecurity"}, "t10": {"es": "Soporte L1/L2", "en": "L1/L2 Support"}, "t11": {"es": "Inglés oral C1", "en": "C1 spoken English"}, "t12": {"es": "Contactarme ↗", "en": "Contact me ↗"}, "t13": {"es": "Resume internacional · EN · PDF", "en": "International resume · EN · PDF"}, "t14": {"es": "CV general · ES · PDF", "en": "General resume · ES · PDF"}, "t15": {"es": "Imprimir CV", "en": "Print resume"}, "t16": {"es": "También disponible:", "en": "Also available:"}, "t17": {"es": "Resume de soporte TI · EN · PDF", "en": "IT support resume · EN · PDF"}, "t18": {"es": "Perfil profesional", "en": "Professional profile"}, "t19": {"es": "Infraestructura confiable.", "en": "Reliable infrastructure."}, "t20": {"es": "Soporte claro.", "en": "Clear support."}, "t21": {"es": "Mi eje es resolver problemas de infraestructura y conectividad. La atención de casos en Amazon y la docencia refuerzan mi capacidad para documentar, explicar soluciones y acompañar a usuarios.", "en": "My focus is solving infrastructure and connectivity problems. Amazon case management and teaching strengthen my ability to document issues, explain solutions and support users."}, "t22": {"es": "Infraestructura y soporte", "en": "Infrastructure & Support"}, "t23": {"es": "Soporte L1/L2, servidores, estaciones de trabajo, hardware, software, CCTV, mantenimiento e implementación.", "en": "L1/L2 support, servers, workstations, hardware, software, CCTV, maintenance, and deployment."}, "t24": {"es": "Ver Inter-Tech Costa Rica ↗", "en": "Explore Inter-Tech Costa Rica ↗"}, "t25": {"es": "Redes y seguridad", "en": "Networks & Security"}, "t26": {"es": "Redes empresariales, VLAN, routing, switching, monitoreo y VPN. Formación en ciberseguridad y Ethical Hacking.", "en": "Enterprise networks, VLANs, routing, switching, monitoring and VPNs. Training in cybersecurity and ethical hacking."}, "t27": {"es": "Calidad y datos", "en": "Quality & Data"}, "t28": {"es": "QA de software, planificación y ejecución de pruebas, Azure Fundamentals, Power BI, Access y JavaScript.", "en": "Software QA, test planning and execution, Azure Fundamentals, Power BI, Access, and JavaScript."}, "t29": {"es": "Servicio y operaciones", "en": "Service & Operations"}, "t30": {"es": "Atención de casos, documentación, seguimiento, sistemas HRIS, cumplimiento y mejora continua.", "en": "Case management, documentation, follow-up, HRIS systems, compliance, and continuous improvement."}, "t31": {"es": "Formación tecnológica", "en": "Technology Education"}, "t32": {"es": "Docencia STEAM, robótica, programación, pensamiento computacional y aprendizaje basado en proyectos.", "en": "STEAM education, robotics, programming, computational thinking, and project-based learning."}, "t33": {"es": "Comunicación bilingüe", "en": "Bilingual Communication"}, "t34": {"es": "Español nativo e inglés oral avanzado C1 (INA). Experiencia de atención regional en Amazon.", "en": "Native Spanish and advanced spoken English at C1 level (INA). Regional support experience at Amazon."}, "t35": {"es": "Trayectoria", "en": "Career history"}, "t36": {"es": "Experiencia profesional", "en": "Professional Experience"}, "t37": {"es": "Experiencia técnica complementada por atención internacional de casos, coordinación operativa y formación de usuarios.", "en": "Technical experience complemented by international case management, operational coordination and user education."}, "t38": {"es": "Instructor de Robótica e Informática", "en": "Robotics & Computer Science Instructor"}, "t39": {"es": "Feb. 2025 — Actualidad", "en": "Feb 2025 — Present"}, "t40": {"es": "Formación STEAM en robótica y programación mediante aprendizaje basado en proyectos.", "en": "Teach STEAM-based robotics and programming through project-based learning."}, "t41": {"es": "Desarrollo del pensamiento computacional, analítico y creativo del estudiantado.", "en": "Develop students’ computational, analytical, and creative-thinking skills."}, "t42": {"es": "Técnico de Monitoreo de Redes y Sistemas", "en": "Network & Systems Monitoring Technician"}, "t43": {"es": "Ene. 2023 — Nov. 2025", "en": "Jan 2023 — Nov 2025"}, "t44": {"es": "Monitoreo del rendimiento y disponibilidad de redes para detectar incidencias.", "en": "Monitored network performance and availability to identify incidents."}, "t45": {"es": "Gestión de conexiones VPN, accesos remotos seguros y reportes de optimización.", "en": "Managed VPN connections, secure remote access, and technical optimization reports."}, "t46": {"es": "Técnico de Infraestructura y Soporte TI", "en": "IT Infrastructure & Support Technician"}, "t47": {"es": "Ago. 2019 — Nov. 2025", "en": "Aug 2019 — Nov 2025"}, "t48": {"es": "Soporte técnico de nivel 1 y 2 para hardware, software y conectividad.", "en": "Provided Level 1 and Level 2 support for hardware, software, and connectivity."}, "t49": {"es": "Administración de servidores, redes empresariales, CCTV y estaciones de trabajo.", "en": "Administered servers, enterprise networks, CCTV systems, and workstations."}, "t50": {"es": "Instalaciones, actualizaciones y mantenimiento preventivo.", "en": "Performed installations, upgrades, and preventive maintenance."}, "t51": {"es": "Especialista del Centro de Recursos para Empleados", "en": "Employee Resource Center Specialist"}, "t52": {"es": "Oct. 2020 — Ago. 2023", "en": "Oct 2020 — Aug 2023"}, "t53": {"es": "Soporte de Recursos Humanos para operaciones de Norte y Sudamérica.", "en": "Delivered HR support for North and South American operations."}, "t54": {"es": "Gestión de consultas, documentación HRIS, seguimiento de casos y cumplimiento de políticas.", "en": "Managed inquiries, HRIS documentation, case follow-up, and policy compliance."}, "t55": {"es": "Gerente de Servicio al Cliente y Control de Calidad", "en": "Customer Service & Quality Control Manager"}, "t56": {"es": "Ene. 2012 — Dic. 2018", "en": "Jan 2012 — Dec 2018"}, "t57": {"es": "Gestión de la calidad del servicio y de las operaciones.", "en": "Managed service quality and operations."}, "t58": {"es": "Implementación de sistemas de mejora continua y desarrollo del personal.", "en": "Implemented continuous-improvement systems and staff development initiatives."}, "t59": {"es": "Preparación", "en": "Qualifications"}, "t60": {"es": "Formación y credenciales", "en": "Education & Credentials"}, "t61": {"es": "Formación universitaria en sistemas y educación. Capacitación técnica en redes, seguridad, nube y calidad de software.", "en": "University education in systems engineering and education. Technical training in networking, security, cloud and software quality."}, "t62": {"es": "EDUCACIÓN", "en": "EDUCATION"}, "t63": {"es": "GRADO ACADÉMICO MÁS ALTO", "en": "HIGHEST ACADEMIC DEGREE"}, "t64": {"es": "MAESTRÍA PROFESIONAL EN CIENCIAS DE LA EDUCACIÓN CON ÉNFASIS EN DOCENCIA", "en": "MAESTRÍA PROFESIONAL EN CIENCIAS DE LA EDUCACIÓN CON ÉNFASIS EN DOCENCIA"}, "t65": {"es": "Universidad Internacional San Isidro Labrador ↗", "en": "Universidad Internacional San Isidro Labrador ↗"}, "t66": {"es": "· Título otorgado el 7 de agosto de 2026", "en": "· Degree awarded August 7, 2026"}, "t67": {"es": "Bachillerato en Ingeniería de Sistemas", "en": "Bachelor’s Degree in Systems Engineering"}, "t68": {"es": "Universidad Internacional San Isidro Labrador ↗", "en": "Universidad Internacional San Isidro Labrador ↗"}, "t69": {"es": "Licenciatura en Ingeniería de Sistemas", "en": "Licenciatura en Ingeniería de Sistemas"}, "t70": {"es": "UISIL · En curso · Tres materias pendientes", "en": "UISIL · In progress · Three courses remaining"}, "t71": {"es": "Bachiller en Educación Media", "en": "High School Diploma"}, "t72": {"es": "FORMACIÓN TÉCNICA Y CREDENCIALES", "en": "TECHNICAL TRAINING & CREDENTIALS"}, "t73": {"es": "Consulte las credenciales del INA en su portal oficial. Las entradas CCNA corresponden a formación en el currículo de redes.", "en": "Look up INA credentials in the official registry. CCNA entries represent networking curriculum coursework."}, "t74": {"es": "Controlador(a) de la Calidad de Software · 561 h", "en": "Software Quality Controller · 561 hours"}, "t75": {"es": "Copiar", "en": "Copy"}, "t76": {"es": "Verificar ↗", "en": "Verify ↗"}, "t77": {"es": "Redes de Computadoras (CCNA) · 280 h", "en": "Computer Networking (CCNA) · 280 hours"}, "t78": {"es": "Copiar", "en": "Copy"}, "t79": {"es": "Verificar ↗", "en": "Verify ↗"}, "t80": {"es": "Ejecutivo(a) en Servicio al Cliente · 192 h", "en": "Customer Service Executive · 192 hours"}, "t81": {"es": "Copiar", "en": "Copy"}, "t82": {"es": "Verificar ↗", "en": "Verify ↗"}, "t83": {"es": "Operador(a) de Aplicaciones Ofimáticas · 192 h", "en": "Office Applications Operator · 192 hours"}, "t84": {"es": "Copiar", "en": "Copy"}, "t85": {"es": "Verificar ↗", "en": "Verify ↗"}, "t86": {"es": "Bases de Datos Access · 50 h", "en": "Microsoft Access Databases · 50 hours"}, "t87": {"es": "Copiar", "en": "Copy"}, "t88": {"es": "Verificar ↗", "en": "Verify ↗"}, "t89": {"es": "Fundamentos de Azure · 50 h", "en": "Azure Fundamentals · 50 hours"}, "t90": {"es": "Copiar", "en": "Copy"}, "t91": {"es": "Verificar ↗", "en": "Verify ↗"}, "t92": {"es": "CCNA ENSA · 70 h", "en": "CCNA ENSA · 70 hours"}, "t93": {"es": "Copiar", "en": "Copy"}, "t94": {"es": "Verificar ↗", "en": "Verify ↗"}, "t95": {"es": "Inglés Oral Avanzado C1", "en": "Advanced Spoken English · C1"}, "t96": {"es": "Copiar", "en": "Copy"}, "t97": {"es": "Verificar ↗", "en": "Verify ↗"}, "t98": {"es": "Contacto", "en": "Contact"}, "t99": {"es": "Conversemos sobre su equipo de tecnología.", "en": "Let’s talk about your technology team."}, "t100": {"es": "Quepos, Puntarenas, Costa Rica · Disponible para oportunidades profesionales.", "en": "Quepos, Puntarenas, Costa Rica · Open to professional opportunities, including remote and international roles."}, "t101": {"es": "Ingeniería · Tecnología · Servicio", "en": "Engineering · Technology · Service"}, "summary": {"es": "Ingeniero de Sistemas enfocado en soporte L1/L2, infraestructura y redes. Experiencia técnica en Inter-Tech y STS Security, atención regional de casos en Amazon ERC y docencia en informática. Maestría Profesional en Ciencias de la Educación con énfasis en Docencia.", "en": "Systems Engineer focused on L1/L2 support, IT infrastructure and networks. Technical experience at Inter-Tech and STS Security, regional case management at Amazon ERC, and computer science instruction. Holds a professional master’s degree in education sciences with an emphasis in teaching."}}</script><script src="assets/app.js" defer></script>
 </body>
 </html>
