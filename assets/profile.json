@@ -1,0 +1,202 @@
+{
+  "name": "Roy Alexander Azofeifa Muñoz",
+  "location": "Quepos, Puntarenas, Costa Rica",
+  "email": "royazofeifa@gmail.com",
+  "phone": "+506 8333-5665",
+  "linkedin": "linkedin.com/in/royalexanderazofeifamunoz",
+  "portfolio": "royazofeifa.github.io/HojaDeVida/",
+  "es": {
+    "title": "Ingeniero de Sistemas | Infraestructura TI y soporte técnico",
+    "summary": "Ingeniero de Sistemas enfocado en soporte L1/L2, infraestructura y redes. Experiencia técnica en Inter-Tech y STS Security, atención regional de casos en Amazon ERC y docencia en informática. Maestría Profesional en Ciencias de la Educación con énfasis en Docencia.",
+    "skills": [
+      [
+        "Soporte e infraestructura",
+        "Diagnóstico de hardware, software y conectividad; soporte L1/L2; servidores, estaciones de trabajo, CCTV e instalaciones; mantenimiento preventivo."
+      ],
+      [
+        "Redes",
+        "VLAN, routing, switching, VPN, acceso remoto y monitoreo de rendimiento y disponibilidad."
+      ],
+      [
+        "Formación técnica",
+        "Currículo CCNA; fundamentos de ciberseguridad y Azure; planificación y ejecución de pruebas de software; Access, Power BI y JavaScript."
+      ],
+      [
+        "Servicio y comunicación",
+        "Documentación y seguimiento de casos, HRIS, atención regional, formación de usuarios y coordinación operativa."
+      ]
+    ],
+    "education": [
+      [
+        "MAESTRÍA PROFESIONAL EN CIENCIAS DE LA EDUCACIÓN CON ÉNFASIS EN DOCENCIA",
+        "Universidad Internacional San Isidro Labrador (UISIL) | 7 de agosto de 2026"
+      ],
+      [
+        "Bachillerato en Ingeniería de Sistemas",
+        "Universidad Internacional San Isidro Labrador (UISIL) | 2023"
+      ],
+      [
+        "Licenciatura en Ingeniería de Sistemas",
+        "UISIL | En curso; tres materias pendientes"
+      ]
+    ],
+    "languages": "Español: nativo. Inglés oral: avanzado C1, INA (2024).",
+    "labels": [
+      "Perfil profesional",
+      "Competencias técnicas",
+      "Experiencia profesional",
+      "Formación académica",
+      "Formación técnica seleccionada",
+      "Idiomas"
+    ],
+    "courses": [
+      "INA: Controlador(a) de la Calidad de Software, 561 h (2023); Redes de Computadoras, currículo CCNA, 280 h (2023); Fundamentos de Azure, 50 h (2023); Bases de Datos Access, 50 h (2023).",
+      "Cisco Networking Academy: CCNAv7 ITN, SRWE y ENSA; IT Essentials; Cybersecurity Essentials. Cursos de formación técnica."
+    ],
+    "jobs": [
+      {
+        "title": "Instructor de Robótica e Informática",
+        "company": "Colegio Ecoturístico del Pacífico",
+        "date": "Feb. 2025 — Actualidad",
+        "bullets": [
+          "Formación STEAM en robótica y programación mediante aprendizaje basado en proyectos.",
+          "Desarrollo del pensamiento computacional, analítico y creativo del estudiantado."
+        ]
+      },
+      {
+        "title": "Técnico de Monitoreo de Redes y Sistemas",
+        "company": "STS Security",
+        "date": "Ene. 2023 — Nov. 2025",
+        "bullets": [
+          "Monitoreo del rendimiento y disponibilidad de redes para detectar incidencias.",
+          "Gestión de conexiones VPN, accesos remotos seguros y reportes de optimización."
+        ]
+      },
+      {
+        "title": "Técnico de Infraestructura y Soporte TI",
+        "company": "Inter-Tech Costa Rica",
+        "date": "Ago. 2019 — Nov. 2025",
+        "bullets": [
+          "Soporte técnico de nivel 1 y 2 para hardware, software y conectividad.",
+          "Administración de servidores, redes empresariales, CCTV y estaciones de trabajo.",
+          "Instalaciones, actualizaciones y mantenimiento preventivo."
+        ]
+      },
+      {
+        "title": "Especialista del Centro de Recursos para Empleados",
+        "company": "Amazon",
+        "date": "Oct. 2020 — Ago. 2023",
+        "bullets": [
+          "Soporte de Recursos Humanos para operaciones de Norte y Sudamérica.",
+          "Gestión de consultas, documentación HRIS, seguimiento de casos y cumplimiento de políticas."
+        ]
+      },
+      {
+        "title": "Gerente de Servicio al Cliente y Control de Calidad",
+        "company": "GAIA Hotel & Reserve",
+        "date": "Ene. 2012 — Dic. 2018",
+        "bullets": [
+          "Gestión de la calidad del servicio y de las operaciones.",
+          "Implementación de sistemas de mejora continua y desarrollo del personal."
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "Systems Engineer | IT Infrastructure & Technical Support",
+    "summary": "Systems Engineer focused on L1/L2 support, IT infrastructure and networks. Technical experience at Inter-Tech and STS Security, regional case management at Amazon ERC, and computer science instruction. Holds a professional master’s degree in education sciences with an emphasis in teaching.",
+    "skills": [
+      [
+        "Support & infrastructure",
+        "Hardware, software and connectivity troubleshooting; L1/L2 support; servers, workstations, CCTV and deployments; preventive maintenance."
+      ],
+      [
+        "Networks",
+        "VLANs, routing, switching, VPNs, remote access, and network performance and availability monitoring."
+      ],
+      [
+        "Technical training",
+        "CCNA curriculum; cybersecurity and Azure fundamentals; software test planning and execution; Access, Power BI and JavaScript."
+      ],
+      [
+        "Service & communication",
+        "Case documentation and follow-up, HRIS, regional support, user education and operational coordination."
+      ]
+    ],
+    "education": [
+      [
+        "MAESTRÍA PROFESIONAL EN CIENCIAS DE LA EDUCACIÓN CON ÉNFASIS EN DOCENCIA",
+        "Professional Master’s Degree in Education Sciences with an Emphasis in Teaching | Universidad Internacional San Isidro Labrador (UISIL) | August 7, 2026"
+      ],
+      [
+        "Bachelor’s Degree in Systems Engineering",
+        "Universidad Internacional San Isidro Labrador (UISIL) | 2023"
+      ],
+      [
+        "Licenciatura en Ingeniería de Sistemas",
+        "UISIL | In progress; three courses remaining"
+      ]
+    ],
+    "languages": "Spanish: native. Spoken English: advanced C1, INA (2024).",
+    "labels": [
+      "Professional Summary",
+      "Core Competencies & Technical Skills",
+      "Professional Experience",
+      "Education",
+      "Selected Technical Training",
+      "Languages"
+    ],
+    "courses": [
+      "INA: Software Quality Controller, 561 hours (2023); Computer Networking, CCNA curriculum, 280 hours (2023); Azure Fundamentals, 50 hours (2023); Microsoft Access Databases, 50 hours (2023).",
+      "Cisco Networking Academy coursework: CCNAv7 ITN, SRWE and ENSA; IT Essentials; Cybersecurity Essentials."
+    ],
+    "jobs": [
+      {
+        "title": "Robotics & Computer Science Instructor",
+        "company": "Colegio Ecoturístico del Pacífico",
+        "date": "Feb 2025 — Present",
+        "bullets": [
+          "Teach STEAM-based robotics and programming through project-based learning.",
+          "Develop students’ computational, analytical, and creative-thinking skills."
+        ]
+      },
+      {
+        "title": "Network & Systems Monitoring Technician",
+        "company": "STS Security",
+        "date": "Jan 2023 — Nov 2025",
+        "bullets": [
+          "Monitored network performance and availability to identify incidents.",
+          "Managed VPN connections, secure remote access, and technical optimization reports."
+        ]
+      },
+      {
+        "title": "IT Infrastructure & Support Technician",
+        "company": "Inter-Tech Costa Rica",
+        "date": "Aug 2019 — Nov 2025",
+        "bullets": [
+          "Provided Level 1 and Level 2 support for hardware, software, and connectivity.",
+          "Administered servers, enterprise networks, CCTV systems, and workstations.",
+          "Performed installations, upgrades, and preventive maintenance."
+        ]
+      },
+      {
+        "title": "Employee Resource Center Specialist",
+        "company": "Amazon",
+        "date": "Oct 2020 — Aug 2023",
+        "bullets": [
+          "Delivered HR support for North and South American operations.",
+          "Managed inquiries, HRIS documentation, case follow-up, and policy compliance."
+        ]
+      },
+      {
+        "title": "Customer Service & Quality Control Manager",
+        "company": "GAIA Hotel & Reserve",
+        "date": "Jan 2012 — Dec 2018",
+        "bullets": [
+          "Managed service quality and operations.",
+          "Implemented continuous-improvement systems and staff development initiatives."
+        ]
+      }
+    ]
+  }
+}
